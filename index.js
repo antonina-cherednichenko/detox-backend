@@ -29,4 +29,4 @@ app.get('/dashboard', stormpath.loginRequired, function(req, res) {
 });
  
 // Listen for incoming requests and serve them.
-app.listen(process.env.PORT || 3000);
+app.listen(3000);
