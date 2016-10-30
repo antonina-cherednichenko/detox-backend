@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 
 
 app.get('/data', stormpath.apiAuthenticationRequired, function(req, res) {
-  res.json({notes: req.user.customData.notes || "This is your notebook. Edit this to start saving your notes!"})
+  res.json({notes: "This is your notebook. Edit this to start saving your notes!"})
 })
 
 // Listen for incoming requests and serve them.
