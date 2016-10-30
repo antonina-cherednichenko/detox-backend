@@ -15,6 +15,8 @@ app.use(stormpath.init(app, {
     }
 }));
 
+app.use(express.static('public'));
+
 // Generate a simple home page.
 app.get('/', function (req, res) {
     res.send("Hey there! Thanks for visting the site! This is backend of Detox and Diets mobile app");
