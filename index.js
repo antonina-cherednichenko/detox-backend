@@ -1,18 +1,32 @@
-var express = require('express')
-var stormpath = require('express-stormpath')
+// Import required modules.
+var express = require('express');
+var stormpath = require('express-stormpath');
  
-var app = express()
+// Initialize our Express app.
+var app = express();
  
+// Configure Stormpath.
 app.use(stormpath.init(app, {
-  expand: {
-    customData: true,
+  application: {
+    href: process.env.STORMPATH_APPLICATION_HREF
   },
+  website: true,
   web: {
-    produces: ['application/json']
+    login: {
+      nextUri: '/dashboard'
+    }
   }
-}))
+}));
  
-app.get('/data', stormpath.apiAuthenticationRequired, function(req, res) {
-  res.json({notes: req.user.customData.notes || "This is your notebook. Edit this to start saving your notes!"})
-})
-app.listen(3000)
+// Generate a simple home page.
+app.get('/', function(req, res) {
+  res.send("Hey there! Thanks for visting the site! Be sure to <a href='/login'>login</a>!");
+});
+ 
+// Generate a simple dashboard page.
+app.get('/dashboard', stormpath.loginRequired, function(req, res) {
+  res.send('Hi: ' + req.user.email + '. Logout <form action="/logout" method="POST"><button type="submit">Logout</button></form>');
+});
+ 
+// Listen for incoming requests and serve them.
+app.listen(process.env.PORT || 3000);
