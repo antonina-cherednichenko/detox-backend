@@ -25,7 +25,7 @@ app.get('/', function (req, res) {
 
 // Retrieving content for mobile app
 app.get('/data', function(req, res) {
-  res.json(fs.readFileSync('content/programs_data.json', 'utf-8'));
+  res.json(JSON.parse(fs.readFileSync('content/programs_data.json', 'utf-8')));
 });
 
 // app.get('/data', stormpath.apiAuthenticationRequired, function(req, res) {
