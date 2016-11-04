@@ -3,7 +3,7 @@
     {
       "name": "Green program",
       "description": "Description for green program",
-      "duration": 7,
+      "duration": 5,
       "new": 0,
       "recommended": 0,
       "shortDescription": "This is short description",
@@ -12,31 +12,31 @@
         {
           "name": "Day 1",
           "description": "Description for Day 1",
-          "photo": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/wedding_detox/wedding_detox_day1.png",
           "photoOnly": 1
         },
         {
           "name": "Day 2",
           "description": "Description for Day 2",
-          "photo": "",
-          "photoOnly": 0
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/wedding_detox/wedding_detox_day2.png",
+          "photoOnly": 1
         },
         {
           "name": "Day 3",
           "description": "Description for Day 3",
-          "photo": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/wedding_detox/wedding_detox_day3.png",
           "photoOnly": 1
         },
         {
           "name": "Day 4",
           "description": "Description for Day 4",
-          "photo": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/wedding_detox/wedding_detox_day4.png",
           "photoOnly": 1
         },
         {
           "name": "Day 5",
           "description": "Description for Day 5",
-          "photo": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/wedding_detox/wedding_detox_day5.png",
           "photoOnly": 1
         }
       ]
