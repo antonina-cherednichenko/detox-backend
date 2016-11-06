@@ -2,6 +2,7 @@
   "data": [
     {
       "name": "Green program",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/wedding_detox/wedding_detox_day1.png",
       "description": "Description for green program",
       "duration": 5,
       "new": 0,
