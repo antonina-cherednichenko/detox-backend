@@ -83,6 +83,36 @@
           "photoOnly": 1
         }
       ]
+    },
+    {
+      "name": "Green detox smoothies",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_program.png",
+      "description": "Green smoothies will revolutionize your health",
+      "duration": 3,
+      "new": 1,
+      "recommended": 0,
+      "shortDescription": "Green smoothies will revolutionize your health",
+      "category": "detox",
+      "schedule": [
+        {
+          "name": "Day 1",
+          "description": "Description for Day 1",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_day1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 2",
+          "description": "Description for Day 2",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_day2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 3",
+          "description": "Description for Day 3",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_day3.png",
+          "photoOnly": 1
+        }
+      ]
     }
   ]
 }
