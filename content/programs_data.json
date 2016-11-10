@@ -9,6 +9,8 @@
       "recommended": 0,
       "shortDescription": "This is short description",
       "category": "detox",
+      "sourceName": "test",
+      "sourceUrl": "www.google.com",
       "schedule": [
         {
           "name": "Day 1",
@@ -42,7 +44,7 @@
         }
       ]
     },
-     {
+    {
       "name": "Morning detox teas",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/tea_detox/tea_detox_program.png",
       "description": "Detoxification - the best way to cleanse the system completely. Check the list of some health Detox morning tea receipes which you have to drink with an empty stomach.",
@@ -51,6 +53,8 @@
       "recommended": 1,
       "shortDescription": "Detoxification - the best way to cleanse the system completely. Check the list of some health Detox morning tea receipes which you have to drink with an empty stomach.",
       "category": "detox",
+      "sourceName": "test",
+      "sourceUrl": "www.google.com",
       "schedule": [
         {
           "name": "Day 1",
@@ -93,6 +97,8 @@
       "recommended": 0,
       "shortDescription": "Green smoothies will revolutionize your health",
       "category": "detox",
+      "sourceName": "test",
+      "sourceUrl": "www.google.com",
       "schedule": [
         {
           "name": "Day 1",
