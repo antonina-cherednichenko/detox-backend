@@ -29,7 +29,7 @@ app.get('/data', function(req, res) {
 });
 
 app.get('/version', function(req, res) {
-   res.send("0.0.1");
+   res.send("1");
 });
 
 // app.get('/data', stormpath.apiAuthenticationRequired, function(req, res) {
