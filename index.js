@@ -28,6 +28,10 @@ app.get('/data', function(req, res) {
   res.json(JSON.parse(fs.readFileSync('content/programs_data.json', 'utf-8')));
 });
 
+app.get('/version', function(req, res) {
+   res.send("0.0.1");
+});
+
 // app.get('/data', stormpath.apiAuthenticationRequired, function(req, res) {
 //   res.json({notes: "This is your notebook. Edit this to start saving your notes!"})
 // })
