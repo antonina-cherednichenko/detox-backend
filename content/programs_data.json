@@ -589,6 +589,86 @@
           "photoOnly": 1
         }
       ]
+    },
+    {
+      "name": "11-days water detox",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "description": "",
+      "duration": 11,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "",
+      "category": "detox",
+      "sourceName": "guthealthproject",
+      "sourceUrl": "http://guthealthproject.com/11-delicious-detox-water-recipes-your-body-will-love/?utm_source=pinterest&utm_medium=post&utm_campaign=social-post&utm_content=11-detox-water-recipes&utm_term=pinterest-followers",
+      "schedule": [
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day1.jpg",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day2.jpg",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day3.jpg",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day4.jpg",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day5.jpg",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day6.jpg",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day7.jpg",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day8.jpg",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day9.jpg",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day10.jpg",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day11.png",
+          "photoOnly": 1
+        },
+      ]
     }
   ]
 }
