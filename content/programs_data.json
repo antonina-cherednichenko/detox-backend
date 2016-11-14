@@ -187,31 +187,31 @@
         {
           "name": "Variant 1",
           "description": "Description for Day 1",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day1",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day1.png",
           "photoOnly": 1
         },
         {
           "name": "Variant 2",
           "description": "Description for Day 2",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day2",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day2.png",
           "photoOnly": 1
         },
         {
           "name": "Variant 3",
           "description": "Description for Day 3",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day3",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day3.png",
           "photoOnly": 1
         },
         {
           "name": "Variant 4",
           "description": "Description for Day 2",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day4",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day4.png",
           "photoOnly": 1
         },
         {
           "name": "Variant 5",
           "description": "Description for Day 3",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day5",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day5.png",
           "photoOnly": 1
         }
       ]
