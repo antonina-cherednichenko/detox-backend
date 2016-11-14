@@ -469,6 +469,44 @@
           "photoOnly": 1
         }
       ]
+    },
+    {
+      "name": "Water Drinks Detox",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "description": "Best Detox Drinks For Weight Loss & Detox",
+      "duration": 4,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "Best Detox Drinks For Weight Loss & Detox",
+      "category": "detox",
+      "sourceName": "infographixdirectory",
+      "sourceUrl": "http://infographixdirectory.com/health/best-detox-drinks-for-weight-loss-detox-infographic/",
+      "schedule": [
+        {
+          "name": "Day 1",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/water_drinks_detox/detox_water_drinks_day1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 2",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/water_drinks_detox/detox_water_drinks_day2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 3",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/water_drinks_detox/detox_water_drinks_day3.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 4",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/water_drinks_detox/detox_water_drinks_day4.png",
+          "photoOnly": 1
+        } 
+      ]
     }
   ]
 }
