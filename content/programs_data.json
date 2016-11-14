@@ -505,7 +505,57 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/water_drinks_detox/detox_water_drinks_day4.png",
           "photoOnly": 1
-        } 
+        }
+      ]
+    },
+    {
+      "name": "Immune-Boosting Detox",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_program.png",
+      "description": "Hate beeing seek in winter, try this detox program",
+      "duration": 6,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "Hate beeing seek in winter, try this detox program",
+      "category": "detox",
+      "sourceName": "helloglow",
+      "sourceUrl": "http://helloglow.co/5-new-health-and-beauty-boosting-infused-water-ideas-for-winter/#_a5y_p=3190321",
+      "schedule": [
+        {
+          "name": "Day 1",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_day1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 2",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_day2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 3",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_day3.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 4",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_day4.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 5",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_day5.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 6",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_day5.png",
+          "photoOnly": 1
+        }
       ]
     }
   ]
