@@ -126,7 +126,7 @@
         }
       ]
     },
-    //Liver detox
+    
     {
       "name": "Liver detox plan",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_program.png",
@@ -164,57 +164,57 @@
           "photoOnly": 1
         }
       ]
-    } //,
-    //Fruits and veggies detox
-    // {
-    //   "name": "Fruits and veggies detox",
-    //   "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_program.png",
-    //   "description": "Fitwirr",
-    //   "duration": 5,
-    //   "new": 1,
-    //   "recommended": 1,
-    //   "shortDescription": "",
-    //   "category": "detox",
-    //   "sourceName": "SparkPeople",
-    //   "sourceUrl": "http://www.sparkpeople.com/resource/nutrition_articles.asp?id=2044#_a5y_p=5560890",
-    //   "schedule": [
-    //     {
-    //       "name": "Description",
-    //       "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think! Select one variant per day",
-    //       "photo": "",
-    //       "photoOnly": 0
-    //     },
-    //     {
-    //       "name": "Variant 1",
-    //       "description": "Description for Day 1",
-    //       "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day1",
-    //       "photoOnly": 1
-    //     },
-    //     {
-    //       "name": "Variant 2",
-    //       "description": "Description for Day 2",
-    //       "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day2",
-    //       "photoOnly": 1
-    //     },
-    //     {
-    //       "name": "Variant 3",
-    //       "description": "Description for Day 3",
-    //       "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day3",
-    //       "photoOnly": 1
-    //     },
-    //     {
-    //       "name": "Variant 4",
-    //       "description": "Description for Day 2",
-    //       "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day4",
-    //       "photoOnly": 1
-    //     },
-    //     {
-    //       "name": "Variant 5",
-    //       "description": "Description for Day 3",
-    //       "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day5",
-    //       "photoOnly": 1
-    //     }
-    //   ]
-    // }
+    } ,
+    
+    {
+      "name": "Fruits and veggies detox",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_program.png",
+      "description": "Fitwirr",
+      "duration": 5,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "",
+      "category": "detox",
+      "sourceName": "SparkPeople",
+      "sourceUrl": "http://www.sparkpeople.com/resource/nutrition_articles.asp?id=2044#_a5y_p=5560890",
+      "schedule": [
+        {
+          "name": "Description",
+          "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think! Select one variant per day",
+          "photo": "",
+          "photoOnly": 0
+        },
+        {
+          "name": "Variant 1",
+          "description": "Description for Day 1",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day1",
+          "photoOnly": 1
+        },
+        {
+          "name": "Variant 2",
+          "description": "Description for Day 2",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day2",
+          "photoOnly": 1
+        },
+        {
+          "name": "Variant 3",
+          "description": "Description for Day 3",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day3",
+          "photoOnly": 1
+        },
+        {
+          "name": "Variant 4",
+          "description": "Description for Day 2",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day4",
+          "photoOnly": 1
+        },
+        {
+          "name": "Variant 5",
+          "description": "Description for Day 3",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day5",
+          "photoOnly": 1
+        }
+      ]
+    }
   ]
 }

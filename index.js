@@ -7,14 +7,14 @@ var fs = require('fs');
 var app = express();
 
 // Configure Stormpath.
-app.use(stormpath.init(app, {
-    expand: {
-        customData: true,
-    },
-    web: {
-        produces: ['application/json']
-    }
-}));
+// app.use(stormpath.init(app, {
+//     expand: {
+//         customData: true,
+//     },
+//     web: {
+//         produces: ['application/json']
+//     }
+// }));
 
 app.use(express.static('public'));
 
