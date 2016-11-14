@@ -125,6 +125,44 @@
           "photoOnly": 1
         }
       ]
+    },
+    {
+      "name": "Liver detox plan",
+      "photoURL": "",
+      "description": "Fitwirr",
+      "duration": 3,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "",
+      "category": "detox",
+      "sourceName": "Fitwirr",
+      "sourceUrl": "http://www.fitwirr.com/health/tips/liver-detox",
+      "schedule": [
+         {
+          "name": "Description",
+          "description": "In three days, you can reboot and jumpstart your way to a healthier body. While many detox programs require you to fast and allow only tonics for days, this 3-day detox plan does not go extreme. You are not bound to just greens and all day of juices. You will be eating whole foods that nourish your body while they flash toxins out and clean your body inside and out. It's a 3 meal a day plan that starts with immune boosting, hydrating juice and end the day with a heart warming soup that's rich in nutrients and green power.",
+          "photo": "",
+          "photoOnly": 0
+        },
+        {
+          "name": "Breakfast",
+          "description": "Description for Day 1",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_day1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Lunch",
+          "description": "Description for Day 2",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_day2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Dinner",
+          "description": "Description for Day 3",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_day3.png",
+          "photoOnly": 1
+        }
+      ]
     }
   ]
 }
