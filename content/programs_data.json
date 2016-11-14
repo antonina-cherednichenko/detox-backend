@@ -169,11 +169,11 @@
     {
       "name": "Fruits and veggies detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_program.png",
-      "description": "Fitwirr",
+      "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think!",
       "duration": 5,
       "new": 1,
       "recommended": 1,
-      "shortDescription": "",
+      "shortDescription": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think!",
       "category": "detox",
       "sourceName": "SparkPeople",
       "sourceUrl": "http://www.sparkpeople.com/resource/nutrition_articles.asp?id=2044#_a5y_p=5560890",
@@ -218,41 +218,105 @@
     },
      {
       "name": "One day meal clean detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_program.png",
-      "description": "Fitwirr",
+      "photoURL": "",
+      "description": "Want to know how to detox your body? If you can't find the right way to detox, here are some DIY ideas on how you can do a body cleanse. Try…",
       "duration": 5,
       "new": 1,
       "recommended": 1,
-      "shortDescription": "",
+      "shortDescription": "Want to know how to detox your body? If you can't find the right way to detox, here are some DIY ideas on how you can do a body cleanse. Try…",
       "category": "detox",
-      "sourceName": "SparkPeople",
-      "sourceUrl": "http://www.sparkpeople.com/resource/nutrition_articles.asp?id=2044#_a5y_p=5560890",
+      "sourceName": "DIYProjects",
+      "sourceUrl": "https://diyprojects.com/how-to-detox-your-body/",
       "schedule": [
         {
           "name": "Description",
-          "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think! Select one variant per day",
+          "description": "Want to know how to detox your body? If you can't find the right way to detox, here are some DIY ideas on how you can do a body cleanse. Try…",
           "photo": "",
           "photoOnly": 0
         },
         {
-          "name": "Variant 1",
+          "name": "",
           "description": "Description for Day 1",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day1.png",
           "photoOnly": 1
         },
         {
-          "name": "Variant 2",
+          "name": "",
           "description": "Description for Day 2",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day2.png",
           "photoOnly": 1
         },
         {
-          "name": "Variant 3",
+          "name": "",
           "description": "Description for Day 3",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day3.png",
           "photoOnly": 1
-        } 
+        } ,
+        {
+          "name": "",
+          "description": "Description for Day 4",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day4.png",
+          "photoOnly": 1
+        } ,
+        {
+          "name": "",
+          "description": "Description for Day 5",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day5.png",
+          "photoOnly": 1
+        } ,
+        {
+          "name": "",
+          "description": "Description for Day 6",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day6.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "Description for Day 7",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day7.png",
+          "photoOnly": 1
+        }  
+      ]
+    },
+
+     {
+      "name": "Juice detox",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_program.png",
+      "description": "",
+      "duration": 3,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "",
+      "category": "detox",
+      "sourceName": "bikinifitness",
+      "sourceUrl": "http://bikinifitnesss.com/hmm-gonna-read-and-look-into-this-later/",
+      "schedule": [
+        {
+          "name": "",
+          "description": "Description for Day 1",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_day1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "Description for Day 2",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_day2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "Description for Day 3",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_day3.png",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "Description for Day 3",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_day4.png",
+          "photoOnly": 1
+        }
       ]
     }
+
   ]
 }
