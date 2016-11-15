@@ -558,7 +558,7 @@
         }
       ]
     },
-     {
+    {
       "name": "3-days juice cleanse",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
       "description": "",
@@ -614,55 +614,55 @@
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day2.jpg",
           "photoOnly": 1
         },
-         {
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day3.jpg",
           "photoOnly": 1
         },
-         {
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day4.jpg",
           "photoOnly": 1
         },
-         {
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day5.jpg",
           "photoOnly": 1
         },
-         {
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day6.jpg",
           "photoOnly": 1
         },
-         {
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day7.jpg",
           "photoOnly": 1
         },
-         {
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day8.jpg",
           "photoOnly": 1
         },
-         {
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day9.jpg",
           "photoOnly": 1
         },
-         {
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day10.jpg",
           "photoOnly": 1
         },
-         {
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day11.png",
@@ -710,6 +710,32 @@
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/day4.png",
+          "photoOnly": 1
+        }
+      ]
+    },
+    {
+      "name": "Refreshing juice detox",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "description": "Trying to snack a little healthier and give your stomach a break? Try these super quick and easy juice recipes.  Just combine the ingredients in a juicer and blend. Bon appetit! ",
+      "duration": 2,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "Trying to snack a little healthier and give your stomach a break? Try these super quick and easy juice recipes.  Just combine the ingredients in a juicer and blend. Bon appetit! ",
+      "category": "detox",
+      "sourceName": "healthcentral",
+      "sourceUrl": "http://www.healthcentral.com/diet-exercise/c/458275/169969/smoothie-infographic?ap=2012",
+      "schedule": [
+        {
+          "name": "Day 1",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/refreshing_juices_detox/day1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Day 2",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/refreshing_juices_detox/day2.png",
           "photoOnly": 1
         }
       ]
