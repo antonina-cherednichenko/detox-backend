@@ -669,6 +669,50 @@
           "photoOnly": 1
         }
       ]
+    },
+    {
+      "name": "Fruits infusion detox",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "description": "",
+      "duration": 4,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "",
+      "category": "detox",
+      "sourceName": "theyummylife.com",
+      "sourceUrl": "http://www.theyummylife.com/Flavored_Water",
+      "schedule": [
+        {
+          "name": "Description",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/description.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/day1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/day2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/day3.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/day4.png",
+          "photoOnly": 1
+        }
+      ]
     }
   ]
 }
