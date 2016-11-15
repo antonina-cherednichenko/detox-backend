@@ -1,16 +1,16 @@
 {
   "data": [
     {
-      "name": "Green program",
+      "name": "Wedding Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
-      "description": "Description for green program",
+      "description": "Detox your body before wedding",
       "duration": 5,
       "new": 0,
       "recommended": 0,
-      "shortDescription": "This is short description",
+      "shortDescription": "Detox your body before wedding",
       "category": "detox",
-      "sourceName": "test",
-      "sourceUrl": "http://www.google.com",
+      "sourceName": "modwedding.com",
+      "sourceUrl": "http://www.modwedding.com/2015/09/find-best-diet-plan-wedding/",
       "schedule": [
         {
           "name": "Day 1",
@@ -204,7 +204,7 @@
     },
     {
       "name": "One day meal clean detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/program.jpg",
       "description": "Want to know how to detox your body? If you can't find the right way to detox, here are some DIY ideas on how you can do a body cleanse. Try…",
       "duration": 5,
       "new": 1,
@@ -304,7 +304,7 @@
     },
     {
       "name": "Simple 1-3 days detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/3_day_detox/program.jpg",
       "description": "",
       "duration": 3,
       "new": 1,
@@ -560,7 +560,7 @@
     },
     {
       "name": "3-days juice cleanse",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/3_days_juice_detox/program.jpg",
       "description": "",
       "duration": 3,
       "new": 1,
@@ -716,7 +716,7 @@
     },
     {
       "name": "Refreshing juice detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/refreshing_juices_detox/program.jpg",
       "description": "Trying to snack a little healthier and give your stomach a break? Try these super quick and easy juice recipes.  Just combine the ingredients in a juicer and blend. Bon appetit! ",
       "duration": 2,
       "new": 1,
