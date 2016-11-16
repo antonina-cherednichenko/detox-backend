@@ -78,7 +78,7 @@
     },
     {
       "name": "Green Smoothies Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
       "description": "The best green smoothie for weight loss is one that is at least 70% green vegetables and 30% fruit at the max. This will insure that your drink is nutrient dense and not sugar heavy.",
       "duration": 3,
       "new": 1,
@@ -91,8 +91,8 @@
         {
           "name": "Description",
           "description": "The best green smoothie for weight loss is one that is at least 70% green vegetables and 30% fruit at the max. This will insure that your drink is nutrient dense and not sugar heavy.",
-          "photo": "",
-          "photoOnly": 3
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_program.png",
+          "photoOnly": 2
         },
         {
           "name": "Day 1",
@@ -129,8 +129,8 @@
         {
           "name": "Description",
           "description": "In three days, you can reboot and jumpstart your way to a healthier body. While many detox programs require you to fast and allow only tonics for days, this 3-day detox plan does not go extreme. You are not bound to just greens and all day of juices. You will be eating whole foods that nourish your body while they flash toxins out and clean your body inside and out. It's a 3 meal a day plan that starts with immune boosting, hydrating juice and end the day with a heart warming soup that's rich in nutrients and green power.",
-          "photo": "",
-          "photoOnly": 3
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_program.png",
+          "photoOnly": 2
         },
         {
           "name": "Breakfast",
@@ -154,7 +154,7 @@
     },
     {
       "name": "Fruits & Veggies Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
       "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think!",
       "duration": 5,
       "new": 1,
@@ -167,8 +167,8 @@
         {
           "name": "Description",
           "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think! Select one variant per day",
-          "photo": "",
-          "photoOnly": 3
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_program.png",
+          "photoOnly": 2
         },
         {
           "name": "Variant 1",
@@ -266,7 +266,7 @@
     },
     {
       "name": "Juice Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/program.png",
       "description": "",
       "duration": 3,
       "new": 1,
@@ -276,6 +276,12 @@
       "sourceName": "bikinifitness",
       "sourceUrl": "http://bikinifitnesss.com/hmm-gonna-read-and-look-into-this-later/",
       "schedule": [
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_program.png",
+          "photoOnly": 1
+        },
         {
           "name": "",
           "description": "",
@@ -317,8 +323,8 @@
         {
           "name": "Instructions",
           "description": "Drink tea upon waking. Drink breakfast smoothie within 1 hour of waking. Follow with 1/2 multivitamin & fish oil supplement. Have another 1/2 multivitamin & probiotic supplement after lunch. Repeat favourite drink as snach between lunch & dinner IF hungry.",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/3_day_detox/3_day_detox_day1.png",
-          "photoOnly": 2
+          "photo": "",
+          "photoOnly": 3
         },
         {
           "name": "",
@@ -342,7 +348,7 @@
     },
     {
       "name": "7-Day Cleanse Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/program.png",
       "description": "",
       "duration": 7,
       "new": 1,
@@ -352,6 +358,12 @@
       "sourceName": "webhealthjournal",
       "sourceUrl": "http://www.webhealthjournal.com/weight-loss-diet-tips-for-vegans",
       "schedule": [
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_program.png",
+          "photoOnly": 1
+        },
         {
           "name": "",
           "description": "",
@@ -408,6 +420,12 @@
       "sourceName": "fitnessrepublic",
       "sourceUrl": "https://wwws.fitnessrepublic.com/nutrition/homemade-detox-drinks-for-weight-loss.html",
       "schedule": [
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/homemade_detox/homemade_detox_program.png",
+          "photoOnly": 1
+        },
         {
           "name": "Day 1",
           "description": "",
@@ -510,7 +528,7 @@
     },
     {
       "name": "Immune-Boosting Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/program.png",
       "description": "Hate beeing seek in winter, try this detox program",
       "duration": 6,
       "new": 1,
@@ -520,6 +538,12 @@
       "sourceName": "helloglow",
       "sourceUrl": "http://helloglow.co/5-new-health-and-beauty-boosting-infused-water-ideas-for-winter/#_a5y_p=3190321",
       "schedule": [
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_program.png",
+          "photoOnly": 1
+        },
         {
           "name": "Day 1",
           "description": "",
