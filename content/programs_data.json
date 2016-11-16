@@ -58,19 +58,19 @@
       "schedule": [
         {
           "name": "Day 1",
-          "description": "Description for Day 1",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/tea_detox/tea_detox_day1.png",
           "photoOnly": 1
         },
         {
           "name": "Day 2",
-          "description": "Description for Day 2",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/tea_detox/tea_detox_day2.png",
           "photoOnly": 1
         },
         {
           "name": "Day 3",
-          "description": "Description for Day 3",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/tea_detox/tea_detox_day3.png",
           "photoOnly": 1
         }
@@ -91,24 +91,24 @@
         {
           "name": "Description",
           "description": "The best green smoothie for weight loss is one that is at least 70% green vegetables and 30% fruit at the max. This will insure that your drink is nutrient dense and not sugar heavy.",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_day1.png",
-          "photoOnly": 0
+          "photo": "",
+          "photoOnly": 3
         },
         {
           "name": "Day 1",
-          "description": "Description for Day 1",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_day1.png",
           "photoOnly": 1
         },
         {
           "name": "Day 2",
-          "description": "Description for Day 2",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_day2.png",
           "photoOnly": 1
         },
         {
           "name": "Day 3",
-          "description": "Description for Day 3",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_day3.png",
           "photoOnly": 1
         }
@@ -116,7 +116,7 @@
     },
     {
       "name": "Liver Detox Plan",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/program.jpeg",
       "description": "Fitwirr",
       "duration": 3,
       "new": 1,
@@ -130,23 +130,23 @@
           "name": "Description",
           "description": "In three days, you can reboot and jumpstart your way to a healthier body. While many detox programs require you to fast and allow only tonics for days, this 3-day detox plan does not go extreme. You are not bound to just greens and all day of juices. You will be eating whole foods that nourish your body while they flash toxins out and clean your body inside and out. It's a 3 meal a day plan that starts with immune boosting, hydrating juice and end the day with a heart warming soup that's rich in nutrients and green power.",
           "photo": "",
-          "photoOnly": 0
+          "photoOnly": 3
         },
         {
           "name": "Breakfast",
-          "description": "Description for Day 1",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_day1.png",
           "photoOnly": 1
         },
         {
           "name": "Lunch",
-          "description": "Description for Day 2",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_day2.png",
           "photoOnly": 1
         },
         {
           "name": "Dinner",
-          "description": "Description for Day 3",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_day3.png",
           "photoOnly": 1
         }
@@ -168,35 +168,35 @@
           "name": "Description",
           "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think! Select one variant per day",
           "photo": "",
-          "photoOnly": 0
+          "photoOnly": 3
         },
         {
           "name": "Variant 1",
-          "description": "Description for Day 1",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day1.png",
           "photoOnly": 1
         },
         {
           "name": "Variant 2",
-          "description": "Description for Day 2",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day2.png",
           "photoOnly": 1
         },
         {
           "name": "Variant 3",
-          "description": "Description for Day 3",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day3.png",
           "photoOnly": 1
         },
         {
           "name": "Variant 4",
-          "description": "Description for Day 2",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day4.png",
           "photoOnly": 1
         },
         {
           "name": "Variant 5",
-          "description": "Description for Day 3",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day5.png",
           "photoOnly": 1
         }
@@ -218,47 +218,47 @@
           "name": "Description",
           "description": "Want to know how to detox your body? If you can't find the right way to detox, here are some DIY ideas on how you can do a body cleanse. Try…",
           "photo": "",
-          "photoOnly": 0
+          "photoOnly": 3
         },
         {
           "name": "",
-          "description": "Description for Day 1",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day1.png",
           "photoOnly": 1
         },
         {
           "name": "",
-          "description": "Description for Day 2",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day2.png",
           "photoOnly": 1
         },
         {
           "name": "",
-          "description": "Description for Day 3",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day3.png",
           "photoOnly": 1
         },
         {
           "name": "",
-          "description": "Description for Day 4",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day4.png",
           "photoOnly": 1
         },
         {
           "name": "",
-          "description": "Description for Day 5",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day5.png",
           "photoOnly": 1
         },
         {
           "name": "",
-          "description": "Description for Day 6",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day6.png",
           "photoOnly": 1
         },
         {
           "name": "",
-          "description": "Description for Day 7",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day7.png",
           "photoOnly": 1
         }
@@ -278,25 +278,25 @@
       "schedule": [
         {
           "name": "",
-          "description": "Description for Day 1",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_day1.png",
           "photoOnly": 1
         },
         {
           "name": "",
-          "description": "Description for Day 2",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_day2.png",
           "photoOnly": 1
         },
         {
           "name": "",
-          "description": "Description for Day 3",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_day3.png",
           "photoOnly": 1
         },
         {
           "name": "",
-          "description": "Description for Day 3",
+          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_day4.png",
           "photoOnly": 1
         }
@@ -318,7 +318,7 @@
           "name": "Instructions",
           "description": "Drink tea upon waking. Drink breakfast smoothie within 1 hour of waking. Follow with 1/2 multivitamin & fish oil supplement. Have another 1/2 multivitamin & probiotic supplement after lunch. Repeat favourite drink as snach between lunch & dinner IF hungry.",
           "photo": "",
-          "photoOnly": 0
+          "photoOnly": 3
         },
         {
           "name": "",
@@ -579,13 +579,13 @@
         {
           "name": "",
           "description": "",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/3_days_juice_detox/3_days_juice_detox_day1.png",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/3_days_juice_detox/3_days_juice_detox_day2.png",
           "photoOnly": 1
         },
         {
           "name": "",
           "description": "",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/3_days_juice_detox/3_days_juice_detox_day1.png",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/3_days_juice_detox/3_days_juice_detox_day3.png",
           "photoOnly": 1
         }
       ]
