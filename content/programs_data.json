@@ -317,8 +317,8 @@
         {
           "name": "Instructions",
           "description": "Drink tea upon waking. Drink breakfast smoothie within 1 hour of waking. Follow with 1/2 multivitamin & fish oil supplement. Have another 1/2 multivitamin & probiotic supplement after lunch. Repeat favourite drink as snach between lunch & dinner IF hungry.",
-          "photo": "",
-          "photoOnly": 3
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/3_day_detox/3_day_detox_day1.png",
+          "photoOnly": 2
         },
         {
           "name": "",
