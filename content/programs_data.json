@@ -266,7 +266,7 @@
     },
     {
       "name": "Juice Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/program.jpg",
       "description": "",
       "duration": 3,
       "new": 1,
@@ -410,7 +410,7 @@
     },
     {
       "name": "Simple Home Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/homemade_detox/homemade_detox_program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/homemade_detox/program.jpeg",
       "description": "Check these 10 amazing dishes and eat them periodically to detoxify your body",
       "duration": 10,
       "new": 1,
@@ -528,7 +528,7 @@
     },
     {
       "name": "Immune-Boosting Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/program.jpeg",
       "description": "Hate beeing seek in winter, try this detox program",
       "duration": 6,
       "new": 1,
