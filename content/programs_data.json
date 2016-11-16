@@ -2,7 +2,7 @@
   "data": [
     {
       "name": "Wedding Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/wedding_detox/program.jpeg",
       "description": "Detox your body before wedding",
       "duration": 5,
       "new": 0,
@@ -46,7 +46,7 @@
     },
     {
       "name": "Morning detox teas",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/tea_detox/tea_detox_program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/tea_detox/program.jpeg",
       "description": "Detoxification - the best way to cleanse the system completely. Check the list of some health Detox morning tea receipes which you have to drink with an empty stomach.",
       "duration": 5,
       "new": 1,
@@ -472,7 +472,7 @@
     },
     {
       "name": "Water Drinks Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/water_drinks_detox/program.jpg",
       "description": "Best Detox Drinks For Weight Loss & Detox",
       "duration": 4,
       "new": 1,
@@ -592,7 +592,7 @@
     },
     {
       "name": "11-days water detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/program.jpeg",
       "description": "",
       "duration": 11,
       "new": 1,
@@ -672,7 +672,7 @@
     },
     {
       "name": "Fruits infusion detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/program.jpeg",
       "description": "",
       "duration": 4,
       "new": 1,
