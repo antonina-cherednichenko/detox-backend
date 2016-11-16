@@ -78,7 +78,7 @@
     },
     {
       "name": "Green Smoothies Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/program.jpg",
       "description": "The best green smoothie for weight loss is one that is at least 70% green vegetables and 30% fruit at the max. This will insure that your drink is nutrient dense and not sugar heavy.",
       "duration": 3,
       "new": 1,
@@ -154,7 +154,7 @@
     },
     {
       "name": "Fruits & Veggies Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/program.jpg",
       "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think!",
       "duration": 5,
       "new": 1,
