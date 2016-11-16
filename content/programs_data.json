@@ -310,7 +310,7 @@
     },
     {
       "name": "Fast & Easy Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/3_day_detox/program.jpg",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/3_day_detox/program.jpeg",
       "description": "",
       "duration": 3,
       "new": 1,
@@ -348,7 +348,7 @@
     },
     {
       "name": "7-Day Cleanse Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/program.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/program.jpeg",
       "description": "",
       "duration": 7,
       "new": 1,
@@ -528,7 +528,7 @@
     },
     {
       "name": "Immune-Boosting Detox",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/program.jpeg",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/program.jpeg",
       "description": "Hate beeing seek in winter, try this detox program",
       "duration": 6,
       "new": 1,
