@@ -9,7 +9,7 @@
       "recommended": 0,
       "shortDescription": "Detox your body before wedding",
       "category": "detox",
-      "sourceName": "modwedding.com",
+      "sourceName": "modwedding",
       "sourceUrl": "http://www.modwedding.com/2015/09/find-best-diet-plan-wedding/",
       "schedule": [
         {
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "name": "Morning detox teas",
+      "name": "Morning Tea Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/tea_detox/program.jpeg",
       "description": "Detoxification - the best way to cleanse the system completely. Check the list of some health Detox morning tea receipes which you have to drink with an empty stomach.",
       "duration": 5,
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "name": "Green detox smoothies",
+      "name": "Green Smoothies Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_program.png",
       "description": "The best green smoothie for weight loss is one that is at least 70% green vegetables and 30% fruit at the max. This will insure that your drink is nutrient dense and not sugar heavy.",
       "duration": 3,
@@ -85,7 +85,7 @@
       "recommended": 0,
       "shortDescription": "Green smoothies will revolutionize your health",
       "category": "detox",
-      "sourceName": "UpcomingHealth",
+      "sourceName": "upcominghealth",
       "sourceUrl": "http://upcominghealth.com/green-smoothies-will-revolutionize-your-health/?pp=1",
       "schedule": [
         {
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "name": "Liver detox plan",
+      "name": "Liver Detox Plan",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_program.png",
       "description": "Fitwirr",
       "duration": 3,
@@ -123,7 +123,7 @@
       "recommended": 1,
       "shortDescription": "",
       "category": "detox",
-      "sourceName": "Fitwirr",
+      "sourceName": "fitwirr",
       "sourceUrl": "http://www.fitwirr.com/health/tips/liver-detox",
       "schedule": [
         {
@@ -153,7 +153,7 @@
       ]
     },
     {
-      "name": "Fruits and veggies detox",
+      "name": "Fruits & Veggies Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_program.png",
       "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think!",
       "duration": 5,
@@ -161,7 +161,7 @@
       "recommended": 1,
       "shortDescription": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think!",
       "category": "detox",
-      "sourceName": "SparkPeople",
+      "sourceName": "sparkpeople",
       "sourceUrl": "http://www.sparkpeople.com/resource/nutrition_articles.asp?id=2044#_a5y_p=5560890",
       "schedule": [
         {
@@ -203,7 +203,7 @@
       ]
     },
     {
-      "name": "One day meal clean detox",
+      "name": "1-Day Cleanse Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/program.jpg",
       "description": "Want to know how to detox your body? If you can't find the right way to detox, here are some DIY ideas on how you can do a body cleanse. Try…",
       "duration": 5,
@@ -211,7 +211,7 @@
       "recommended": 1,
       "shortDescription": "Want to know how to detox your body? If you can't find the right way to detox, here are some DIY ideas on how you can do a body cleanse. Try…",
       "category": "detox",
-      "sourceName": "DIYProjects",
+      "sourceName": "diyprojects",
       "sourceUrl": "https://diyprojects.com/how-to-detox-your-body/",
       "schedule": [
         {
@@ -265,7 +265,7 @@
       ]
     },
     {
-      "name": "Juice detox",
+      "name": "Juice Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_program.png",
       "description": "",
       "duration": 3,
@@ -303,7 +303,7 @@
       ]
     },
     {
-      "name": "Simple 1-3 days detox",
+      "name": "Fast & Easy Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/3_day_detox/program.jpg",
       "description": "",
       "duration": 3,
@@ -341,7 +341,7 @@
       ]
     },
     {
-      "name": "7-Day Cleanse",
+      "name": "7-Day Cleanse Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_program.png",
       "description": "",
       "duration": 7,
@@ -349,7 +349,7 @@
       "recommended": 1,
       "shortDescription": "",
       "category": "detox",
-      "sourceName": "webhealthjournal.com",
+      "sourceName": "webhealthjournal",
       "sourceUrl": "http://www.webhealthjournal.com/weight-loss-diet-tips-for-vegans",
       "schedule": [
         {
@@ -397,7 +397,7 @@
       ]
     },
     {
-      "name": "Homemade Detox",
+      "name": "Simple Home Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/homemade_detox/homemade_detox_program.png",
       "description": "Check these 10 amazing dishes and eat them periodically to detoxify your body",
       "duration": 10,
@@ -559,7 +559,7 @@
       ]
     },
     {
-      "name": "3-days juice cleanse",
+      "name": "3-Days Juice Cleanse",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/3_days_juice_detox/program.jpg",
       "description": "",
       "duration": 3,
@@ -591,7 +591,7 @@
       ]
     },
     {
-      "name": "11-days water detox",
+      "name": "11-Days Water Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/program.jpeg",
       "description": "",
       "duration": 11,
@@ -671,7 +671,7 @@
       ]
     },
     {
-      "name": "Fruits infusion detox",
+      "name": "Fruits Infusion Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/program.jpeg",
       "description": "",
       "duration": 4,
@@ -679,7 +679,7 @@
       "recommended": 1,
       "shortDescription": "",
       "category": "detox",
-      "sourceName": "theyummylife.com",
+      "sourceName": "theyummylife",
       "sourceUrl": "http://www.theyummylife.com/Flavored_Water",
       "schedule": [
         {
@@ -715,7 +715,7 @@
       ]
     },
     {
-      "name": "Refreshing juice detox",
+      "name": "Refreshing Juice Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/refreshing_juices_detox/program.jpg",
       "description": "Trying to snack a little healthier and give your stomach a break? Try these super quick and easy juice recipes.  Just combine the ingredients in a juicer and blend. Bon appetit! ",
       "duration": 2,
