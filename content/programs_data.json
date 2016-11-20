@@ -13,6 +13,12 @@
       "sourceUrl": "http://www.modwedding.com/2015/09/find-best-diet-plan-wedding/",
       "schedule": [
         {
+          "name": "Description",
+          "description": "Many brides want to look their best on the big day and may even go to extreme measures to do so. Before you shell out major bucks on a juice cleanse or put yourself on a deprivation diet, follow these tips and tricks on detoxing naturally before the wedding. Replace at least one of your daily meals with the following receipt.",
+          "photo": "",
+          "photoOnly": 3
+        },
+        {
           "name": "Day 1",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/wedding_detox/wedding_detox_day1.png",
@@ -63,6 +69,12 @@
       "sourceUrl": "http://theindianspot.com/detox-tea-recipes-for-healthy-body-and-glowing-skin/",
       "schedule": [
         {
+          "name": "Description",
+          "description": "Detoxification - the best way to cleanse the system completely. Check the list of some health Detox morning tea receipes which you have to drink with an empty stomach. Replace at least one of your daily meals with the following receipt.",
+          "photo": "",
+          "photoOnly": 3
+        },
+        {
           "name": "Day 1",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/tea_detox/tea_detox_day1.png",
@@ -79,6 +91,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/tea_detox/tea_detox_day3.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -96,7 +114,7 @@
       "schedule": [
         {
           "name": "Description",
-          "description": "The best green smoothie for weight loss is one that is at least 70% green vegetables and 30% fruit at the max. This will insure that your drink is nutrient dense and not sugar heavy.",
+          "description": "The best green smoothie for weight loss is one that is at least 70% green vegetables and 30% fruit at the max. This will insure that your drink is nutrient dense and not sugar heavy.Replace at least one of your daily meals with the following receipt.",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_program.png",
           "photoOnly": 2
         },
@@ -117,6 +135,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/green_receipes_detox/green_receipes_day3.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -155,6 +179,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/liver_detox_day3.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -172,7 +202,7 @@
       "schedule": [
         {
           "name": "Description",
-          "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think! Select one variant per day",
+          "description": "You've heard that you need at least 5 servings of fruits and veggies daily, but what exactly does that look like? Take a look at these examples of what those look like to give you a better idea of how to incorporate those into each meal and snack - it's easier than you may think! Select one variant per day.",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_program.png",
           "photoOnly": 2
         },
@@ -205,6 +235,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_veggies_detox/veggie_detox_day5.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -222,7 +258,7 @@
       "schedule": [
         {
           "name": "Description",
-          "description": "Want to know how to detox your body? If you can't find the right way to detox, here are some DIY ideas on how you can do a body cleanse. Try…",
+          "description": "Want to know how to detox your body? If you can't find the right way to detox, here are some DIY ideas on how you can do a body cleanse. Replace at least one of your daily meals with the following receipts.",
           "photo": "",
           "photoOnly": 3
         },
@@ -267,6 +303,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/one_day_meal_detox_day7.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -283,6 +325,12 @@
       "sourceUrl": "http://bikinifitnesss.com/hmm-gonna-read-and-look-into-this-later/",
       "schedule": [
          {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipt.",
+          "photo": "",
+          "photoOnly": 3
+        },
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_program.png",
@@ -311,6 +359,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_day4.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -326,6 +380,12 @@
       "sourceName": "mylifewellloved",
       "sourceUrl": "https://www.pinterest.com/mylifewellloved/",
       "schedule": [
+         {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "",
+          "photoOnly": 3
+        },
         {
           "name": "Instructions",
           "description": "Drink tea upon waking. Drink breakfast smoothie within 1 hour of waking. Follow with 1/2 multivitamin & fish oil supplement. Have another 1/2 multivitamin & probiotic supplement after lunch. Repeat favourite drink as snach between lunch & dinner IF hungry.",
@@ -349,6 +409,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/3_day_detox/3_day_detox_day3.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -365,6 +431,12 @@
       "sourceUrl": "http://www.webhealthjournal.com/weight-loss-diet-tips-for-vegans",
       "schedule": [
          {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "",
+          "photoOnly": 3
+        },
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_program.png",
@@ -411,6 +483,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_day7.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -427,6 +505,12 @@
       "sourceUrl": "https://wwws.fitnessrepublic.com/nutrition/homemade-detox-drinks-for-weight-loss.html",
       "schedule": [
          {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "",
+          "photoOnly": 3
+        },
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/homemade_detox/homemade_detox_program.png",
@@ -491,6 +575,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/homemade_detox/homemade_detox_day10.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -506,6 +596,12 @@
       "sourceName": "infographix",
       "sourceUrl": "http://infographixdirectory.com/health/best-detox-drinks-for-weight-loss-detox-infographic/",
       "schedule": [
+         {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "",
+          "photoOnly": 3
+        },
         {
           "name": "Day 1",
           "description": "",
@@ -529,6 +625,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/water_drinks_detox/detox_water_drinks_day4.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -545,6 +647,12 @@
       "sourceUrl": "http://helloglow.co/5-new-health-and-beauty-boosting-infused-water-ideas-for-winter/#_a5y_p=3190321",
       "schedule": [
          {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "",
+          "photoOnly": 3
+        },
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_program.png",
@@ -585,6 +693,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/immune_water_detox_day5.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -600,6 +714,12 @@
       "sourceName": "skinnymom",
       "sourceUrl": "https://www.skinnymom.com/get-in-the-know-23-secrets-from-the-worlds-best-trainers/",
       "schedule": [
+         {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "",
+          "photoOnly": 3
+        },
         {
           "name": "",
           "description": "",
@@ -617,6 +737,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/3_days_juice_detox/3_days_juice_detox_day3.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -632,6 +758,12 @@
       "sourceName": "guthealthproject",
       "sourceUrl": "http://guthealthproject.com/11-delicious-detox-water-recipes-your-body-will-love/?utm_source=pinterest&utm_medium=post&utm_campaign=social-post&utm_content=11-detox-water-recipes&utm_term=pinterest-followers",
       "schedule": [
+         {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "",
+          "photoOnly": 3
+        },
         {
           "name": "",
           "description": "",
@@ -697,6 +829,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day11.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -741,6 +879,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/day4.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     },
@@ -756,6 +900,12 @@
       "sourceName": "healthcentral",
       "sourceUrl": "http://www.healthcentral.com/diet-exercise/c/458275/169969/smoothie-infographic?ap=2012",
       "schedule": [
+         {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "",
+          "photoOnly": 3
+        },
         {
           "name": "Day 1",
           "description": "",
@@ -767,6 +917,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/refreshing_juices_detox/day2.png",
           "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
         }
       ]
     }
