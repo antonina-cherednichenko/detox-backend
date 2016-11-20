@@ -907,6 +907,66 @@
           "photoOnly": 3
         }
       ]
+    },
+
+
+
+
+     {
+      "name": "1300 1 Week Diet",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "description": "A Full Day's Menu To Lose Weight",
+      "duration": 7,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "A Full Day's Menu To Lose Weight",
+      "category": "diet",
+      "sourceName": "skinnymom",
+      "sourceUrl": "http://www.skinnymom.com/a-day-of-food-what-to-eat-to-lose-weight/",
+      "schedule": [
+        {
+          "name": "",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/program.png",
+          "photoOnly": 3
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/meal1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/meal2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/meal3.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/meal4.png",
+          "photoOnly": 1
+        },
+         {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/meal5.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
+        }
+      ]
     }
   ]
 }
