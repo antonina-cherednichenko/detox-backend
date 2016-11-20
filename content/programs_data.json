@@ -145,7 +145,7 @@
       ]
     },
     {
-      "name": "Mind and Body Detox",
+      "name": "Mind & Body Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/program.jpg",
       "description": "3-day reboot and jumpstart of your way to a healthier body. Programs starts with immune boosting, hydrating juice and end the day with a heart warming soup that's rich in nutrients and green power.",
       "duration": 3,
@@ -245,7 +245,7 @@
       ]
     },
     {
-      "name": "1-Day Cleanse Detox",
+      "name": "Simple Cleanse Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/one_day_meal_detox/program.jpg",
       "description": "Want to know how to detox your body? If you can't find the right way to detox, here are some DIY ideas on how you can do a body cleanse. Try…",
       "duration": 5,
@@ -315,7 +315,7 @@
     {
       "name": "Juice Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/program.jpg",
-      "description": "Are you ready to feel better, have more energy, sleep more deeply, breathe more freely, think more clearly, and feel more vibrant? Giving the body a rest from solid food and nurturing it briefly with easily digested, nutrient-dense juices can improve health by healing the body and renewing the body, mind, and spirit.",
+      "description": "Are you ready to feel better, have more energy, sleep more deeply, breathe more freely, think more clearly, and feel more vibrant? Giving the body a rest from solid food and nurturing it briefly with easily digested, nutrient-dense juices can improve health.",
       "duration": 3,
       "new": 1,
       "recommended": 1,
@@ -332,7 +332,7 @@
         },
          {
           "name": "Instructions",
-          "description": "1. Make one recipe each day, beginning wit the Green Juice. Each recipe makes about 64 ounces. Store your juice in a sealed pitcher.\n\n 2. Refrigerate and consume 1 cup of juice very hour, for a total of 8 hours. Every meal for these 3 days will consist of juice only, except for dinner.\n\n 3. Every 30 minutes, drink one cup of water or more, avoiding alcohol or caffeine.\n\n 4. Your last meal of the day will be a full meal and should consist only of grilled or baked great protein or vegetables. Avoid starches and processed food.\n\n 5. Finish each evening with a glass of warm chamomile tea with freshly squeezed lemon.",
+          "description": "1. Make one recipe each day, beginning wit the Green Juice. Each recipe makes about 64 ounces. Store your juice in a sealed pitcher.\n\n2. Refrigerate and consume 1 cup of juice very hour, for a total of 8 hours. Every meal for these 3 days will consist of juice only, except for dinner.\n\n3. Every 30 minutes, drink one cup of water or more, avoiding alcohol or caffeine.\n\n4. Your last meal of the day will be a full meal and should consist only of grilled or baked great protein or vegetables. Avoid starches and processed food.\n\n5. Finish each evening with a glass of warm chamomile tea with freshly squeezed lemon.",
           "photo": "",
           "photoOnly": 3
         },
@@ -413,7 +413,7 @@
       ]
     },
     {
-      "name": "7-Day Cleanse Detox",
+      "name": "Full Cleanse Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/program.jpeg",
       "description": "Determined to fully clean your body from toxins? Try to follow this program for the whole week.",
       "duration": 7,
@@ -691,7 +691,7 @@
       ]
     },
     {
-      "name": "3-Days Juice Cleanse",
+      "name": "Simple Juice Cleanse",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/3_days_juice_detox/program.jpg",
       "description": "Whether cleanses are your thing, or you just prefer to consume an abundance of fruits and veggies by juicing each day, these healthy juicing recipes will aid in nourishing and ridding your body of toxins.",
       "duration": 3,
@@ -735,7 +735,7 @@
       ]
     },
     {
-      "name": "11-Days Water Detox",
+      "name": "Full Water Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/program.jpeg",
       "description": "Detox water is one of the most popular tools for weight loss to come around in a long time, and for great reason. Not only can you drink detox water to lose weight, it tastes delicious and helps flush your body of toxins. Check this program to get involved.",
       "duration": 11,
