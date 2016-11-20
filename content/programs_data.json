@@ -147,11 +147,11 @@
     {
       "name": "Mind and Body Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/liver_detox/program.jpg",
-      "description": "In three days, you can reboot and jumpstart your way to a healthier body. While many detox programs require you to fast and allow only tonics for days, this 3-day detox plan does not go extreme. You are not bound to just greens and all day of juices. You will be eating whole foods that nourish your body while they flash toxins out and clean your body inside and out. It's a 3 meal a day plan that starts with immune boosting, hydrating juice and end the day with a heart warming soup that's rich in nutrients and green power. Repeat the following menu for 3 days.",
+      "description": "3-day reboot and jumpstart of your way to a healthier body. Programs starts with immune boosting, hydrating juice and end the day with a heart warming soup that's rich in nutrients and green power.",
       "duration": 3,
       "new": 1,
       "recommended": 1,
-      "shortDescription": "In three days, you can reboot and jumpstart your way to a healthier body. While many detox programs require you to fast and allow only tonics for days, this 3-day detox plan does not go extreme. You are not bound to just greens and all day of juices. You will be eating whole foods that nourish your body while they flash toxins out and clean your body inside and out. It's a 3 meal a day plan that starts with immune boosting, hydrating juice and end the day with a heart warming soup that's rich in nutrients and green power. Repeat the following menu for 3 days.",
+      "shortDescription": "3-day reboot and jumpstart of your way to a healthier body. Programs starts with immune boosting, hydrating juice and end the day with a heart warming soup that's rich in nutrients and green power.",
       "category": "detox",
       "sourceName": "fitwirr",
       "sourceUrl": "http://www.fitwirr.com/health/tips/liver-detox",
@@ -332,7 +332,7 @@
         },
          {
           "name": "Instructions",
-          "description": "1. Make one recipe each day, beginning wit the Green Juice. Each recipe makes about 64 ounces. Store your juice in  a sealed pitcher.\n 2. Refrigerate and consume 1 cup of juice very hour, for a total of 8 hours. Every meal for these 3 days will consist of juice only, except for dinner.<br> 3. Every 30 minutes, drink one cup of water or more, avoiding alcohol or caffeine. 4. Your last meal of the day will be a full meal and should consist only of grilled or baked great protein or vegetables. Avoid starches and processed food. 5. Finish each evening with a glass of warm chamomile tea with freshly squeezed lemon.",
+          "description": "1. Make one recipe each day, beginning wit the Green Juice. Each recipe makes about 64 ounces. Store your juice in a sealed pitcher.\n\n 2. Refrigerate and consume 1 cup of juice very hour, for a total of 8 hours. Every meal for these 3 days will consist of juice only, except for dinner.\n\n 3. Every 30 minutes, drink one cup of water or more, avoiding alcohol or caffeine.\n\n 4. Your last meal of the day will be a full meal and should consist only of grilled or baked great protein or vegetables. Avoid starches and processed food.\n\n 5. Finish each evening with a glass of warm chamomile tea with freshly squeezed lemon.",
           "photo": "",
           "photoOnly": 3
         },
@@ -575,18 +575,18 @@
     {
       "name": "Water Drinks Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/water_drinks_detox/program.jpg",
-      "description": "Best Detox Drinks For Weight Loss & Detox",
+      "description": "Simple drinks for weight loss and detox. Detox water not only rids your body of toxins but helps to flush fat from your body as well.",
       "duration": 4,
       "new": 1,
       "recommended": 1,
-      "shortDescription": "Best Detox Drinks For Weight Loss & Detox",
+      "shortDescription": "Simple drinks for weight loss and detox. Detox water not only rids your body of toxins but helps to flush fat from your body as well.",
       "category": "detox",
       "sourceName": "infographix",
       "sourceUrl": "http://infographixdirectory.com/health/best-detox-drinks-for-weight-loss-detox-infographic/",
       "schedule": [
          {
           "name": "Description",
-          "description": "Best Detox Drinks For Weight Loss & Detox. Replace at least one of your daily meals with the following receipts.",
+          "description": "Simple drinks for weight loss and detox. Detox water not only rids your body of toxins but helps to flush fat from your body as well. Replace at least one of your daily meals with the following receipts.",
           "photo": "",
           "photoOnly": 3
         },
@@ -625,18 +625,18 @@
     {
       "name": "Immune-Boosting Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/immune_water_detox/program.jpeg",
-      "description": "If you hate beeing seek in winter, try this detox program",
+      "description": "If you hate beeing seek in winter, try this detox program. Your immune system will be happy.",
       "duration": 6,
       "new": 1,
       "recommended": 1,
-      "shortDescription": "If you hate beeing seek in winter, try this detox program",
+      "shortDescription": "If you hate beeing seek in winter, try this detox program. Your immune system will be happy.",
       "category": "detox",
       "sourceName": "helloglow",
       "sourceUrl": "http://helloglow.co/5-new-health-and-beauty-boosting-infused-water-ideas-for-winter/#_a5y_p=3190321",
       "schedule": [
          {
           "name": "Description",
-          "description": "If you hate beeing seek in winter, try this detox program. Replace at least one of your daily meals with the following receipts.",
+          "description": "If you hate beeing seek in winter, try this detox program. Your immune system will be happy. Replace at least one of your daily meals with the following receipts.",
           "photo": "",
           "photoOnly": 3
         },
