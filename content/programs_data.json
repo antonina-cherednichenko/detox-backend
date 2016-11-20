@@ -324,13 +324,13 @@
       "sourceName": "bikinifitness",
       "sourceUrl": "http://bikinifitnesss.com/hmm-gonna-read-and-look-into-this-later/",
       "schedule": [
-         {
+        {
           "name": "Description",
           "description": "Are you ready to feel better, have more energy, sleep more deeply, breathe more freely, think more clearly, and feel more vibrant? Giving the body a rest from solid food and nurturing it briefly with easily digested, nutrient-dense juices can improve health by healing the body and renewing the body, mind, and spirit.",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/72_hours_juice_detox/72_hours_juice_detox_program.png",
           "photoOnly": 2
         },
-         {
+        {
           "name": "Instructions",
           "description": "1. Make one recipe each day, beginning wit the Green Juice. Each recipe makes about 64 ounces. Store your juice in a sealed pitcher.\n\n2. Refrigerate and consume 1 cup of juice very hour, for a total of 8 hours. Every meal for these 3 days will consist of juice only, except for dinner.\n\n3. Every 30 minutes, drink one cup of water or more, avoiding alcohol or caffeine.\n\n4. Your last meal of the day will be a full meal and should consist only of grilled or baked great protein or vegetables. Avoid starches and processed food.\n\n5. Finish each evening with a glass of warm chamomile tea with freshly squeezed lemon.",
           "photo": "",
@@ -374,7 +374,7 @@
       "sourceName": "mylifewellloved",
       "sourceUrl": "https://www.pinterest.com/mylifewellloved/",
       "schedule": [
-         {
+        {
           "name": "Description",
           "description": "Learn how to detoxify your body just in one day. Afraid of long program? This fast end easy detox plan can suit you perfectly...",
           "photo": "",
@@ -413,7 +413,7 @@
       ]
     },
     {
-      "name": "Full Cleanse Detox",
+      "name": "Whole Week Cleanse Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/program.jpeg",
       "description": "Determined to fully clean your body from toxins? Try to follow this program for the whole week.",
       "duration": 7,
@@ -424,56 +424,50 @@
       "sourceName": "webhealthjournal",
       "sourceUrl": "http://www.webhealthjournal.com/weight-loss-diet-tips-for-vegans",
       "schedule": [
-         {
+        {
           "name": "Description",
           "description": "Determined to fully clean your body from toxins? Try to follow this program for the whole week.",
-          "photo": "",
-          "photoOnly": 3
-        },
-        {
-          "name": "",
-          "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_program.png",
-          "photoOnly": 1
+          "photoOnly": 2
         },
         {
-          "name": "",
+          "name": "Monday",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_day1.png",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Tuesday",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_day2.png",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Wednesday",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_day3.png",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Thursday",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_day4.png",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Friday",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_day5.png",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Saturday",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_day6.png",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Sunday",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/7_day_cleanse_detox_day7.png",
           "photoOnly": 1
@@ -584,7 +578,7 @@
       "sourceName": "infographix",
       "sourceUrl": "http://infographixdirectory.com/health/best-detox-drinks-for-weight-loss-detox-infographic/",
       "schedule": [
-         {
+        {
           "name": "Description",
           "description": "Simple drinks for weight loss and detox. Detox water not only rids your body of toxins but helps to flush fat from your body as well. Replace at least one of your daily meals with the following receipts.",
           "photo": "",
@@ -634,7 +628,7 @@
       "sourceName": "helloglow",
       "sourceUrl": "http://helloglow.co/5-new-health-and-beauty-boosting-infused-water-ideas-for-winter/#_a5y_p=3190321",
       "schedule": [
-         {
+        {
           "name": "Description",
           "description": "If you hate beeing seek in winter, try this detox program. Your immune system will be happy. Replace at least one of your daily meals with the following receipts.",
           "photo": "",
@@ -702,7 +696,7 @@
       "sourceName": "skinnymom",
       "sourceUrl": "https://www.skinnymom.com/get-in-the-know-23-secrets-from-the-worlds-best-trainers/",
       "schedule": [
-         {
+        {
           "name": "Description",
           "description": "Whether cleanses are your thing, or you just prefer to consume an abundance of fruits and veggies by juicing each day, these healthy juicing recipes will aid in nourishing and ridding your body of toxins. Replace at least one of your daily meals with the following receipts.",
           "photo": "",
@@ -746,74 +740,74 @@
       "sourceName": "guthealthproject",
       "sourceUrl": "http://guthealthproject.com/11-delicious-detox-water-recipes-your-body-will-love/?utm_source=pinterest&utm_medium=post&utm_campaign=social-post&utm_content=11-detox-water-recipes&utm_term=pinterest-followers",
       "schedule": [
-         {
+        {
           "name": "Description",
           "description": "Detox water is one of the most popular tools for weight loss to come around in a long time, and for great reason. Not only can you drink detox water to lose weight, it tastes delicious and helps flush your body of toxins. Check this program to get involved. Replace at least one of your daily meals with the following receipts.",
           "photo": "",
           "photoOnly": 3
         },
         {
-          "name": "",
+          "name": "Day 1",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day1.jpg",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 2",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day2.jpg",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 3",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day3.jpg",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 4",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day4.jpg",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 5",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day5.jpg",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 6",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day6.jpg",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 7",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day7.jpg",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 8",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day8.jpg",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 9",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day9.jpg",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 10",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day10.jpg",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 11",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/11_waters_detox/11_waters_detox_day11.png",
           "photoOnly": 1
@@ -840,30 +834,30 @@
       "schedule": [
         {
           "name": "Description",
-          "description": "What if you’re addicted to sugary or chemical-filled diet drinks? Fruit Infused Water is filled with delicious fruit infused water recipes to help you break your soda and sugary drink addictions with naturally sweetened drinks.",
+          "description": "What if you’re addicted to sugary or chemical-filled diet drinks? Fruit Infused Water is filled with delicious fruit infused water recipes to help you break your soda and sugary drink addictions with naturally sweetened drinks. Replace at least one of your daily meals with the following receipt.",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/description.png",
           "photoOnly": 2
         },
         {
-          "name": "",
+          "name": "Day 1",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/day1.png",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 2",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/day2.png",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 3",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/day3.png",
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Day 4",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/fruits_infused_water/day4.png",
           "photoOnly": 1
@@ -888,7 +882,7 @@
       "sourceName": "healthcentral",
       "sourceUrl": "http://www.healthcentral.com/diet-exercise/c/458275/169969/smoothie-infographic?ap=2012",
       "schedule": [
-         {
+        {
           "name": "Description",
           "description": "Replace at least one of your daily meals with the following receipts.",
           "photo": "",
