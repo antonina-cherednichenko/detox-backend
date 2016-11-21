@@ -908,11 +908,6 @@
         }
       ]
     },
-
-
-
-
-
     {
       "name": "1,300 Calories Diet",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet1/program.jpeg",
@@ -924,7 +919,7 @@
       "category": "diet",
       "sourceName": "skinnymom",
       "sourceUrl": "http://www.skinnymom.com/a-day-of-food-what-to-eat-to-lose-weight/",
-       "schedule": [
+      "schedule": [
         {
           "name": "",
           "description": "The GM diet is a low-fat, high-fiber diet that centers around a fat-free cabbage soup. This cabbage soup appears on your meal plan every day for the entire week, and it's the only thing that you'll eat repeatedly during the entire course of your diet.",
@@ -968,7 +963,6 @@
           "photoOnly": 3
         }
       ]
-     
     },
     {
       "name": "Cabbage Soup Diet",
@@ -981,7 +975,7 @@
       "category": "diet",
       "sourceName": "fitwirr",
       "sourceUrl": "http://www.fitwirr.com/health/tips/gm-diet-plan",
-       "schedule": [
+      "schedule": [
         {
           "name": "Description",
           "description": "Replace at least one of your daily meals with the following receipts.",
@@ -1038,18 +1032,18 @@
         }
       ]
     },
-     {
+    {
       "name": "3-Day Military Diet",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet3/program.jpg",
       "description": "",
-      "duration": 7,
+      "duration": 3,
       "new": 1,
       "recommended": 1,
       "shortDescription": "",
       "category": "diet",
       "sourceName": "fitwirr",
-      "sourceUrl": "http://www.fitwirr.com/health/tips/gm-diet-plan",
-       "schedule": [
+      "sourceUrl": "http://fitwirr.com/health/tips/3-day-diet",
+      "schedule": [
         {
           "name": "Description",
           "description": "Replace at least one of your daily meals with the following receipts.",
@@ -1134,7 +1128,156 @@
           "photo": "",
           "photoOnly": 3
         }
-      
+      ]
+    },
+    {
+      "name": "1-Day Meal Plan",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "description": "",
+      "duration": 1,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "",
+      "category": "diet",
+      "sourceName": "fitwirr",
+      "sourceUrl": "http://fitwirr.com/health/tips/lose-weight",
+      "schedule": [
+        {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet4/program.png",
+          "photoOnly": 2
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet4/1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet4/2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet4/3.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet4/4.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet4/5.png",
+          "photoOnly": 1
+        }
+      ]
+    },
+    {
+      "name": "10 pounds loss",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "description": "",
+      "duration": 1,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "",
+      "category": "diet",
+      "sourceName": "healthyhomestead",
+      "sourceUrl": "http://healthyhomestead.com/lose-10-pounds-in-a-week/",
+      "schedule": [
+        {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet5/program.png",
+          "photoOnly": 2
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet5/1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet5/2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet5/3.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet5/4.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet5/5.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet5/6.png",
+          "photoOnly": 1
+        }
+      ]
+    },
+    {
+      "name": "3 Weak Meal Plan",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "description": "",
+      "duration": 21,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "",
+      "category": "diet",
+      "sourceName": "helenmorning",
+      "sourceUrl": "http://helenmorning.tumblr.com/?p=548631917680295",
+      "schedule": [
+        {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet5/program.png",
+          "photoOnly": 2
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet6/1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet6/2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet6/3.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet6/4.png",
+          "photoOnly": 1
+        }
       ]
     }
   ]
