@@ -912,7 +912,8 @@
 
 
 
-     {
+
+    {
       "name": "1,300 Calories Week Diet",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
       "description": "A Full Day's Menu To Lose Weight",
@@ -923,68 +924,12 @@
       "category": "diet",
       "sourceName": "skinnymom",
       "sourceUrl": "http://www.skinnymom.com/a-day-of-food-what-to-eat-to-lose-weight/",
-      "schedule": [
-        {
-          "name": "",
-          "description": "Replace at least one of your daily meals with the following receipts.",
-          "photo": "",
-          "photoOnly": 3
-        },
-        {
-          "name": "",
-          "description": "",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet2/day1.png",
-          "photoOnly": 1
-        },
-        {
-          "name": "",
-          "description": "",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/day2.png",
-          "photoOnly": 1
-        },
-        {
-          "name": "",
-          "description": "",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/day3.png",
-          "photoOnly": 1
-        },
-        {
-          "name": "",
-          "description": "",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/day4.png",
-          "photoOnly": 1
-        },
-         {
-          "name": "",
-          "description": "",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/day5.png",
-          "photoOnly": 1
-        },
-        {
-          "name": "Attention",
-          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
-          "photo": "",
-          "photoOnly": 3
-        }
-      ]
-    },
-     {
-      "name": "Cabbage Soup Diet",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
-      "description": "",
-      "duration": 7,
-      "new": 1,
-      "recommended": 1,
-      "shortDescription": "",
-      "category": "diet",
-      "sourceName": "fitwirr",
-      "sourceUrl": "http://www.fitwirr.com/health/tips/gm-diet-plan",
-      "schedule": [
+       "schedule": [
         {
           "name": "",
           "description": "The GM diet is a low-fat, high-fiber diet that centers around a fat-free cabbage soup. This cabbage soup appears on your meal plan every day for the entire week, and it's the only thing that you'll eat repeatedly during the entire course of your diet.",
-          "photo": "",
-          "photoOnly": 3
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/program.png",
+          "photoOnly": 2
         },
         {
           "name": "",
@@ -1010,10 +955,79 @@
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/meal4.png",
           "photoOnly": 1
         },
-         {
+        {
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet1/meal5.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
+        }
+      ]
+     
+    },
+    {
+      "name": "Cabbage Soup Diet",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet2/program.jpeg",
+      "description": "",
+      "duration": 7,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "",
+      "category": "diet",
+      "sourceName": "fitwirr",
+      "sourceUrl": "http://www.fitwirr.com/health/tips/gm-diet-plan",
+       "schedule": [
+        {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "",
+          "photoOnly": 3
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet2/day1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet2/day2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet2/day3.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet2/day4.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet2/day5.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet2/day6.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet2/day7.png",
           "photoOnly": 1
         },
         {
