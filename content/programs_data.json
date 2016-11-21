@@ -413,7 +413,7 @@
       ]
     },
     {
-      "name": "Whole Week Cleanse Detox",
+      "name": "Week Cleanse Detox",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/7_days_cleanse_detox/program.jpeg",
       "description": "Determined to fully clean your body from toxins? Try to follow this program for the whole week.",
       "duration": 7,
@@ -914,8 +914,8 @@
 
 
     {
-      "name": "1,300 Calories Week Diet",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "name": "1,300 Calories Diet",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet1/program.jpeg",
       "description": "A Full Day's Menu To Lose Weight",
       "duration": 7,
       "new": 1,
@@ -1036,6 +1036,105 @@
           "photo": "",
           "photoOnly": 3
         }
+      ]
+    },
+     {
+      "name": "3-Day Military Diet",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet3/program.jpg",
+      "description": "",
+      "duration": 7,
+      "new": 1,
+      "recommended": 1,
+      "shortDescription": "",
+      "category": "diet",
+      "sourceName": "fitwirr",
+      "sourceUrl": "http://www.fitwirr.com/health/tips/gm-diet-plan",
+       "schedule": [
+        {
+          "name": "Description",
+          "description": "Replace at least one of your daily meals with the following receipts.",
+          "photo": "",
+          "photoOnly": 3
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/1.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/2.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/3.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/4.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/5.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/6.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/7.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/8.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/9.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/10.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/11.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet3/12.png",
+          "photoOnly": 1
+        },
+        {
+          "name": "Attention",
+          "description": "We recommend you to consult your doctor or physiotherapist before starting any detox or diet programs",
+          "photo": "",
+          "photoOnly": 3
+        }
+      
       ]
     }
   ]
