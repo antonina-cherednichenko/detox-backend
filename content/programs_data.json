@@ -1132,7 +1132,7 @@
     },
     {
       "name": "1-Day Meal Plan",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet4/program.jpg",
       "description": "",
       "duration": 1,
       "new": 1,
@@ -1182,7 +1182,7 @@
     },
     {
       "name": "10 pounds loss",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet5/program.jpg",
       "description": "",
       "duration": 1,
       "new": 1,
@@ -1238,7 +1238,7 @@
     },
     {
       "name": "3 Weak Meal Plan",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet6/program.jpeg",
       "description": "",
       "duration": 21,
       "new": 1,
@@ -1281,8 +1281,8 @@
       ]
     },
     {
-      "name": "Master Cleanse Lemonade Diet",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "name": "Lemonade Diet",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet7/program.jpg",
       "description": "",
       "duration": 21,
       "new": 1,
@@ -1344,7 +1344,7 @@
     },
     {
       "name": "600 Calories a Day Diet",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet8/program.jpg",
       "description": "",
       "duration": 3,
       "new": 1,
@@ -1357,8 +1357,8 @@
         {
           "name": "Description",
           "description": "Replace at least one of your daily meals with the following receipts.",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet8/program.png",
-          "photoOnly": 2
+          "photo": "",
+          "photoOnly": 3
         },
         {
           "name": "Instructions",
@@ -1388,7 +1388,7 @@
     },
     {
       "name": "3 Days Weight Loss",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet9/program.jpeg",
       "description": "",
       "duration": 3,
       "new": 1,
@@ -1426,7 +1426,7 @@
     },
     {
       "name": "5 Days Weight Loss",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet10/program.jpeg",
       "description": "",
       "duration": 5,
       "new": 1,
@@ -1476,7 +1476,7 @@
     },
     {
       "name": "Flat Belly Stomach",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet11/program.jpeg",
       "description": "",
       "duration": 1,
       "new": 1,
@@ -1515,18 +1515,12 @@
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet11/4.png",
           "photoOnly": 1
-        },
-        {
-          "name": "",
-          "description": "",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet10/5.png",
-          "photoOnly": 1
         }
       ]
     },
     {
       "name": "800 Calories Diet",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/diet12/program.jpeg",
       "description": "",
       "duration": 2,
       "new": 1,
@@ -1576,32 +1570,6 @@
           "name": "",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet12/6.png",
-          "photoOnly": 1
-        }
-      ]
-    },
-     {
-      "name": "Flat Belly Diet",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/images/glass.png",
-      "description": "",
-      "duration": 2,
-      "new": 1,
-      "recommended": 1,
-      "shortDescription": "",
-      "category": "diet",
-      "sourceName": "southerncurlsandpearls",
-      "sourceUrl": "http://www.southerncurlsandpearls.com/",
-      "schedule": [
-        {
-          "name": "Description",
-          "description": "Replace at least one of your daily meals with the following receipts.",
-          "photo": "",
-          "photoOnly": 3
-        },
-        {
-          "name": "",
-          "description": "",
-          "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet13/program.jpg",
           "photoOnly": 1
         }
       ]
