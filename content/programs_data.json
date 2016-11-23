@@ -1586,12 +1586,12 @@
       "schedule": [
         {
           "name": "Description",
-          "description": "Looking for fun, fast and easy way to clean your body and lose fat? Check this plan. Take the challenge and wait for results.",
+          "description": "Looking for fun, fast and easy way to clean your body and lose fat? Check this plan. Take the challenge and wait for results. You will see 2 sample menus, select the one you like.",
           "photo": "",
           "photoOnly": 3
         },
         {
-          "name": "",
+          "name": "Variant 1",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet12/1.png",
           "photoOnly": 1
@@ -1615,7 +1615,7 @@
           "photoOnly": 1
         },
         {
-          "name": "",
+          "name": "Variant 2",
           "description": "",
           "photo": "https://mighty-bayou-30907.herokuapp.com/images/diet12/5.png",
           "photoOnly": 1
