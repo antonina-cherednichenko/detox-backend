@@ -3,9 +3,12 @@ var express = require('express');
 var stormpath = require('express-stormpath');
 var fs = require('fs');
 
+var cors = require('cors')
+
 // Initialize our Express app.
 var app = express();
 
+app.use(cors())
 // Configure Stormpath.
 // app.use(stormpath.init(app, {
 //     expand: {
@@ -18,15 +21,15 @@ var app = express();
 
 app.use(express.static('public'));
 
-var allowCrossDomain = function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
+// var allowCrossDomain = function(req, res, next) {
+//     res.header('Access-Control-Allow-Origin', '*');
+//     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+//     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
-    next();
-}
+//     next();
+// }
 
-app.use(allowCrossDomain);
+// app.use(allowCrossDomain);
 
 // Generate a simple home page.
 app.get('/', function (req, res) {
