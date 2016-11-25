@@ -13,8 +13,8 @@
       "url" : "http://www.testcompany.com/licenses/LICENSE-2.0.html"
     }
   },
-  "host" : "www.[host]:[port]",
-  "basePath" : "/v1",
+  "host" : "localhost:8080",
+  "basePath" : "/viviiviv",
   "tags" : [ {
     "name" : "accounts",
     "description" : "Endpoint for account management"
