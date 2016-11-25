@@ -1,0 +1,3770 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "This is a sample spec for our REST API",
+    "version" : "v1",
+    "title" : "Swagger spec for our REST API",
+    "termsOfService" : "http://www.testcompany.com/terms-and-conditions",
+    "contact" : {
+      "url" : "http://www.testcompany.com"
+    },
+    "license" : {
+      "name" : "Company Licence",
+      "url" : "http://www.testcompany.com/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host" : "www.[host]:[port]",
+  "basePath" : "/v1",
+  "tags" : [ {
+    "name" : "accounts",
+    "description" : "Endpoint for account management"
+  }, {
+    "name" : "auth"
+  }, {
+    "name" : "channels",
+    "description" : "Endpoint for channel management"
+  }, {
+    "name" : "folders",
+    "description" : "Endpoint for folder management"
+  }, {
+    "name" : "media"
+  }, {
+    "name" : "playlists",
+    "description" : "Endpoint for playlist management"
+  }, {
+    "name" : "programs",
+    "description" : "Endpoint for program management"
+  }, {
+    "name" : "tags",
+    "description" : "Endpoint for tag management"
+  }, {
+    "name" : "users"
+  } ],
+  "schemes" : [ "http", "https" ],
+  "paths" : {
+    "/accounts" : {
+      "get" : {
+        "tags" : [ "accounts" ],
+        "summary" : "Returns account details for the active session",
+        "description" : "Returns a complete list of details for a specific account based on the session's active account. ADMINS ONLY!",
+        "operationId" : "getSessionAccount",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of account details",
+            "schema" : {
+              "$ref" : "#/definitions/Account Detail"
+            }
+          },
+          "400" : {
+            "description" : "Required data is missing"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Account with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "Account is deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "accounts" ],
+        "summary" : "Creates a new account",
+        "description" : "Creates a new account setting the user associated with the session as an admin. ",
+        "operationId" : "createAccount",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "All of the account information to be submitted at creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Account Detail"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful creation of account",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Required data is missing"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "accounts" ],
+        "summary" : "Updates an existing account",
+        "description" : "Updates an existing account. ADMINS ONLY! ",
+        "operationId" : "updateAccount",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "All of the account information to be submitted at creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Account Detail"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update of account",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Account detail submitted is not valid"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "410" : {
+            "description" : "Account is deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "accounts" ],
+        "summary" : "Deletes session's active account",
+        "description" : "Deletes the account associated with the session's active account. Record is not deleted but flagged as deleted. ADMINS ONLY!",
+        "operationId" : "deleteSessionAccount",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of account",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Required data is missing"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Account with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "Account is already deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/accounts/all" : {
+      "get" : {
+        "tags" : [ "accounts" ],
+        "summary" : "Returns list of active accounts",
+        "description" : "Returns a complete list of active accounts. GLOBAL ADMINS ONLY!",
+        "operationId" : "getAccounts",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of account list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/accounts/{accountId}" : {
+      "get" : {
+        "tags" : [ "accounts" ],
+        "summary" : "Returns account details based on unique identifier",
+        "description" : "Returns a complete list of details for a specific account based on the submitted account identifier. ADMINS ONLY!",
+        "operationId" : "getAccount",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "accountId",
+          "in" : "path",
+          "description" : "Unique account identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of account details",
+            "schema" : {
+              "$ref" : "#/definitions/Account Detail"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Account with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "Account is deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "accounts" ],
+        "summary" : "Deletes account based on unique identifier",
+        "description" : "Deletes the account associated with the accountId. Record is not deleted but flagged as deleted. ADMINS ONLY!",
+        "operationId" : "deleteAccount",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "accountId",
+          "in" : "path",
+          "description" : "Unique account identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of account",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Required data is missing"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Account with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "Account is already deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/auth" : {
+      "get" : {
+        "tags" : [ "auth" ],
+        "summary" : "Returns a Login Response object based on a sessionKey",
+        "description" : "Returns a login response object  and list of accounts the user is authorized to access based on the submitted session key!",
+        "operationId" : "checkSession",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response",
+            "schema" : {
+              "$ref" : "#/definitions/Login response"
+            }
+          },
+          "400" : {
+            "description" : "Invalid session key"
+          },
+          "403" : {
+            "description" : "User not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "auth" ],
+        "summary" : "Returns a Login Response object",
+        "description" : "Returns a login response object with the session key and list of accounts the user is authorized to access!",
+        "operationId" : "login",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "User's auth info",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/User authorization credentials"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful login",
+            "schema" : {
+              "$ref" : "#/definitions/Login response"
+            }
+          },
+          "403" : {
+            "description" : "User not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/auth/assign/accountUser" : {
+      "post" : {
+        "tags" : [ "auth" ],
+        "summary" : "Assign a user to an account",
+        "description" : "Assigns a user to the session's account with its roles. ADMINS ONLY!",
+        "operationId" : "setAccountUser",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Roles this user has for this account",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Roles"
+          }
+        }, {
+          "name" : "userId",
+          "in" : "query",
+          "description" : "Unique user identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "304" : {
+            "description" : "User already set as global admin"
+          },
+          "400" : {
+            "description" : "Submitted User is not valid"
+          },
+          "403" : {
+            "description" : "User not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/auth/assign/globalUser" : {
+      "get" : {
+        "tags" : [ "auth" ],
+        "summary" : "Sets the user as a global admin",
+        "description" : "Sets the user with global adminstrator rights. GLOBAL_ADMIN ONLY!",
+        "operationId" : "setGlobalAdmin",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "query",
+          "description" : "Unique user identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "304" : {
+            "description" : "User already set as global admin"
+          },
+          "400" : {
+            "description" : "Submitted User is not valid"
+          },
+          "403" : {
+            "description" : "User not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/auth/assign/myPass" : {
+      "put" : {
+        "tags" : [ "auth" ],
+        "summary" : "Sets a new password for the user",
+        "description" : "Sets a new password for the user associated with the session",
+        "operationId" : "setPassword",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "User's secret key - will be handled differently",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/User authorization credentials"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "304" : {
+            "description" : "User already set as global admin"
+          },
+          "403" : {
+            "description" : "User not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/auth/assign/sessionAccount" : {
+      "get" : {
+        "tags" : [ "auth" ],
+        "summary" : "Sets the active account for the session",
+        "description" : "Sets the active account for the session",
+        "operationId" : "setActiveAccount",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "accountId",
+          "in" : "query",
+          "description" : "Unique account identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Submitted Account is not valid"
+          },
+          "403" : {
+            "description" : "User not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/auth/assign/sessionChannel" : {
+      "get" : {
+        "tags" : [ "auth" ],
+        "summary" : "Sets the active channel for the session",
+        "description" : "Sets the active channel for the session",
+        "operationId" : "setActiveChannel",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "channelId",
+          "in" : "query",
+          "description" : "Unique channel identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Submitted Channel is not valid"
+          },
+          "403" : {
+            "description" : "User not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/channels" : {
+      "get" : {
+        "tags" : [ "channels" ],
+        "summary" : "Returns list of active channels",
+        "description" : "Returns a complete list of active channels associated with the session.",
+        "operationId" : "getChannels",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of channel list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "204" : {
+            "description" : "No content"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "channels" ],
+        "summary" : "Creates a new channel",
+        "description" : "Creates a new channel setting the user associated with the session as an admin. ",
+        "operationId" : "createChannel",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "All of the account information to be submitted at creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Channel Detailed information"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful creation of channel",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "channels" ],
+        "summary" : "Updates an existing channel",
+        "description" : "Updates an existing channel. ADMINS ONLY! ",
+        "operationId" : "updateChannel",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "All of the channel information to be submitted at creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Channel Detailed information"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update of channel",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Channel detail submitted is not valid"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "410" : {
+            "description" : "Channel is deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/channels/public" : {
+      "get" : {
+        "tags" : [ "channels" ],
+        "summary" : "Returns list of active public channels",
+        "description" : "Returns a complete list of active publc channels.",
+        "operationId" : "getPublicChannels",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of public channel list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "204" : {
+            "description" : "No content"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/channels/public/{channelId}" : {
+      "get" : {
+        "tags" : [ "channels" ],
+        "summary" : "Returns public channel details",
+        "description" : "Returns a complete list of public details for a specific channel based on the submitted channel identifier.",
+        "operationId" : "getPublicChannel",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "channelId",
+          "in" : "path",
+          "description" : "Unique channel identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of public channel details",
+            "schema" : {
+              "$ref" : "#/definitions/Channel Detailed information"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Channel with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/channels/{channelId}" : {
+      "get" : {
+        "tags" : [ "channels" ],
+        "summary" : "Returns channel details",
+        "description" : "Returns a complete list of details for a specific channel based on the submitted channel identifier.",
+        "operationId" : "getChannel",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "channelId",
+          "in" : "path",
+          "description" : "Unique channel identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of channel details",
+            "schema" : {
+              "$ref" : "#/definitions/Channel Detailed information"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Channel with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "channels" ],
+        "summary" : "Deletes channel based on unique identifier",
+        "description" : "Deletes the channel associated with the channelId. Record is not deleted but flagged as deleted. ADMINS ONLY!",
+        "operationId" : "deleteChannel",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "channelId",
+          "in" : "path",
+          "description" : "Unique channel identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of channel",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Channel with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "Channel is already deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/folders" : {
+      "get" : {
+        "tags" : [ "folders" ],
+        "summary" : "Returns list of folders",
+        "description" : "Returns a complete list of folders associated with the session account.",
+        "operationId" : "getFolders",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of folder list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "204" : {
+            "description" : "No content"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "folders" ],
+        "summary" : "Creates a new folder",
+        "description" : "Creates a new folder under the account associated with the session as an admin. ",
+        "operationId" : "createFolder",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "All of the folder information to be submitted at creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Folder information"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful creation of folder",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "folders" ],
+        "summary" : "Updates an existing folder",
+        "description" : "Updates an existing folder. Only the name can be updated at this time. ",
+        "operationId" : "updateFolder",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "All of the folder information to be submitted at creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Folder information"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update of folder",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Folder detail submitted is not valid"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "410" : {
+            "description" : "Folder is not found"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/folders/media" : {
+      "put" : {
+        "tags" : [ "folders" ],
+        "summary" : "Add Media list to a folder (create folder if new)",
+        "description" : "Add a list of media files to a folder. Create the folder if it does not exist and a name is submitted. ADMINS ONLY! ",
+        "operationId" : "addOrCreateMediaToFolder",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Folder Object with List of media identifiers to add to the folder",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Folder information with media list"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/Folder information with media list"
+            }
+          },
+          "202" : {
+            "description" : "Successful update of folder",
+            "schema" : {
+              "$ref" : "#/definitions/Folder information with media list"
+            }
+          },
+          "400" : {
+            "description" : "Invalid folder type"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "410" : {
+            "description" : "Folder is deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/folders/media/{folderId}" : {
+      "get" : {
+        "tags" : [ "folders" ],
+        "summary" : "Returns list of media in a folder",
+        "description" : "Returns a complete list of media files in a specific folder based on the submitted folder identifier.",
+        "operationId" : "getMediaFolder",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "folderId",
+          "in" : "path",
+          "description" : "Unique folder identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of channel details",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid Folder type"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Channel with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "folders" ],
+        "summary" : "Add Media list to an existing folder",
+        "description" : "Add a list of media files to an existing folder based on a folderId. ADMINS ONLY! ",
+        "operationId" : "addMediaToFolder",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "List of media identifiers to add to the folder",
+          "required" : true,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        }, {
+          "name" : "folderId",
+          "in" : "path",
+          "description" : "Unique folder identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update of folder",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Invalid folder type"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "410" : {
+            "description" : "Folder is deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "folders" ],
+        "summary" : "Deletes media from folder based on unique identifier",
+        "description" : "Deletes the folder associated with the folderId. ADMINS ONLY!",
+        "operationId" : "deleteMediaFromFolder",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "List of media identifiers to add to the folder",
+          "required" : true,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        }, {
+          "name" : "folderId",
+          "in" : "path",
+          "description" : "Unique folder identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of media from folder",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Folder with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/folders/type/{folderType}" : {
+      "get" : {
+        "tags" : [ "folders" ],
+        "summary" : "Returns list of folders based on specified type",
+        "description" : "Returns a complete list of folders associated with the session account and specified folder type.",
+        "operationId" : "getFoldersByType",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "folderType",
+          "in" : "path",
+          "description" : "FolderType",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of folder list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "204" : {
+            "description" : "No content"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/folders/{folderId}" : {
+      "get" : {
+        "tags" : [ "folders" ],
+        "summary" : "Returns folder details",
+        "description" : "Returns a complete list of details for a specific folder based on the submitted folder identifier.",
+        "operationId" : "getFolder",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "folderId",
+          "in" : "path",
+          "description" : "Unique folder identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of folder details",
+            "schema" : {
+              "$ref" : "#/definitions/Folder information with media list"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Folder with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "folders" ],
+        "summary" : "Deletes folder based on unique identifier",
+        "description" : "Deletes the folder associated with the folderId. ADMINS ONLY!",
+        "operationId" : "deleteFolder",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "folderId",
+          "in" : "path",
+          "description" : "Unique folder identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of folder",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Folder with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "Folder is already deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/media" : {
+      "post" : {
+        "tags" : [ "media" ],
+        "summary" : "Upload Media file",
+        "description" : "Upload a Media file to the session account",
+        "operationId" : "uploadMedia",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful upload",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "User not authorized"
+          },
+          "406" : {
+            "description" : "Data submitted is not acceptable"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/media/category/{categoryId}" : {
+      "get" : {
+        "tags" : [ "media" ],
+        "summary" : "Returns list of media files for the requested folder identifier",
+        "description" : "Returns a complete list of media files in the submitted folder and associated with the session.",
+        "operationId" : "getMediaByCategory",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "categoryId",
+          "in" : "path",
+          "description" : "categoryId",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of media file list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/media/folder/{folderId}" : {
+      "get" : {
+        "tags" : [ "media" ],
+        "summary" : "Returns list of media files for the requested folder identifier",
+        "description" : "Returns a complete list of media files in the submitted folder and associated with the session.",
+        "operationId" : "getMediaByFolder",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "folderId",
+          "in" : "path",
+          "description" : "folderId",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of media file list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/media/search}" : {
+      "post" : {
+        "tags" : [ "media" ],
+        "summary" : "Returns list of media files for the requested tags",
+        "description" : "Returns a complete list of media files in the submitted tags and associated with the session.",
+        "operationId" : "getMediaTaxonomy",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "taxonomy",
+          "description" : "taxonomy",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Tag list"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of media file list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/media/type/{mediaType}" : {
+      "get" : {
+        "tags" : [ "media" ],
+        "summary" : "Returns list of media files for the session account",
+        "description" : "Returns a complete list of media files associated with the session.",
+        "operationId" : "getMediaByType",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "mediaType",
+          "in" : "path",
+          "description" : "MediaType",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of media file list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/media/{mediaId}" : {
+      "get" : {
+        "tags" : [ "media" ],
+        "summary" : "Returns media file information",
+        "description" : "Returns all the information related to a specific media file.",
+        "operationId" : "getMedia",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "mediaId",
+          "in" : "path",
+          "description" : "Unique media identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of media file details",
+            "schema" : {
+              "$ref" : "#/definitions/Media File information"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Media file with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "media" ],
+        "summary" : "Deletes media file based on unique identifier",
+        "description" : "Deletes the media file associated with the mediaId. Record is not deleted but flagged as deleted. ADMINS ONLY!",
+        "operationId" : "deleteMedia",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "mediaId",
+          "in" : "path",
+          "description" : "Unique media file identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of media file",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Video File with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "Video file is already deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/playlists" : {
+      "get" : {
+        "tags" : [ "playlists" ],
+        "summary" : "Returns list of playlists",
+        "description" : "Returns a complete list of playlists associated with the session account.",
+        "operationId" : "getPlaylists",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of playlist list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "204" : {
+            "description" : "No content"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "playlists" ],
+        "summary" : "Creates a new playlist",
+        "description" : "Creates a new playlist under the account associated with the session as an admin. ",
+        "operationId" : "createPlaylist",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "All of the playlist information to be submitted at creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Playlist information"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful creation of playlist",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "playlists" ],
+        "summary" : "Updates an existing playlist",
+        "description" : "Updates an existing playlist. Only the name can be updated at this time. ",
+        "operationId" : "updatePlaylist",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "All of the playlist information to be submitted at creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Playlist information"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update of playlist",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Playlist detail submitted is not valid"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "410" : {
+            "description" : "Playlist is not found"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/playlists/media" : {
+      "put" : {
+        "tags" : [ "playlists" ],
+        "summary" : "Add Media list to a playlist (create playlist if new)",
+        "description" : "Add a list of media files to a playlist. Create the playlist if it does not exist and a name is submitted. ADMINS ONLY! ",
+        "operationId" : "addOrCreateMediaToPlaylist",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Playlist Object with List of media identifiers to add to the playlist",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Playlist information with media list"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/Playlist information with media list"
+            }
+          },
+          "202" : {
+            "description" : "Successful update of playlist",
+            "schema" : {
+              "$ref" : "#/definitions/Playlist information with media list"
+            }
+          },
+          "400" : {
+            "description" : "Invalid playlist type"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "410" : {
+            "description" : "Playlist is deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/playlists/media/{playlistId}" : {
+      "get" : {
+        "tags" : [ "playlists" ],
+        "summary" : "Returns list of media in a playlist",
+        "description" : "Returns a complete list of media files in a specific playlist based on the submitted playlist identifier.",
+        "operationId" : "getMediaPlaylist",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "playlistId",
+          "in" : "path",
+          "description" : "Unique playlist identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of channel details",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid Playlist type"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Channel with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "playlists" ],
+        "summary" : "Add Media list to an existing playlist",
+        "description" : "Add a list of media files to an existing playlist based on a playlistId. ADMINS ONLY! ",
+        "operationId" : "addMediaToPlaylist",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "List of media identifiers to add to the playlist",
+          "required" : true,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/definitions/Playlist Media File information"
+            }
+          }
+        }, {
+          "name" : "playlistId",
+          "in" : "path",
+          "description" : "Unique playlist identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update of playlist",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Invalid playlist type"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "410" : {
+            "description" : "Playlist is deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "playlists" ],
+        "summary" : "Deletes media from playlist based on unique identifier",
+        "description" : "Deletes the playlist associated with the playlistId. ADMINS ONLY!",
+        "operationId" : "deleteMediaFromPlaylist",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "List of media identifiers to add to the playlist",
+          "required" : true,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        }, {
+          "name" : "playlistId",
+          "in" : "path",
+          "description" : "Unique playlist identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of media from playlist",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Playlist with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/playlists/{playlistId}" : {
+      "get" : {
+        "tags" : [ "playlists" ],
+        "summary" : "Returns playlist details",
+        "description" : "Returns a complete list of details for a specific playlist based on the submitted playlist identifier.",
+        "operationId" : "getPlaylist",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "playlistId",
+          "in" : "path",
+          "description" : "Unique playlist identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of playlist details",
+            "schema" : {
+              "$ref" : "#/definitions/Playlist information with media list"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Playlist with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "playlists" ],
+        "summary" : "Deletes playlist based on unique identifier",
+        "description" : "Deletes the playlist associated with the playlistId. ADMINS ONLY!",
+        "operationId" : "deletePlaylist",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "playlistId",
+          "in" : "path",
+          "description" : "Unique playlist identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of playlist",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Playlist with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "Playlist is already deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/programs" : {
+      "post" : {
+        "tags" : [ "programs" ],
+        "summary" : "Creates a new program",
+        "description" : "Creates a new program. ",
+        "operationId" : "createProgram",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "All of the program information to be submitted at creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Program information"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful creation of program",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "406" : {
+            "description" : "The information submitted is not acceptable. Missing channelId"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "programs" ],
+        "summary" : "Updates an existing program",
+        "description" : "Updates an existing program. ADMINS ONLY! ",
+        "operationId" : "updateProgram",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "All of the program information to be submitted at creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Program information"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update of program",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Program detail submitted is not valid"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "410" : {
+            "description" : "Program is deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/programs/channel/{channelId}" : {
+      "post" : {
+        "tags" : [ "programs" ],
+        "summary" : "Returns list of programs for a given period",
+        "description" : "Returns a complete list of programs for the period specified.",
+        "operationId" : "getChannelPrograms",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "channelId",
+          "in" : "path",
+          "description" : "Unique channel identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Sets the range of dates to return based on program start time",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/DateRange"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of program list",
+            "schema" : {
+              "$ref" : "#/definitions/Program list"
+            }
+          },
+          "204" : {
+            "description" : "No content"
+          },
+          "400" : {
+            "description" : "Invalid Channel identifier"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/programs/{programId}" : {
+      "get" : {
+        "tags" : [ "programs" ],
+        "summary" : "Returns program details",
+        "description" : "Returns a complete list of details for a specific program based on the submitted program identifier.",
+        "operationId" : "getProgram",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "programId",
+          "in" : "path",
+          "description" : "Unique program identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of program details",
+            "schema" : {
+              "$ref" : "#/definitions/Program information"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Program with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "programs" ],
+        "summary" : "Deletes program based on unique identifier",
+        "description" : "Deletes the program associated with the programId. Record is not deleted but flagged as deleted. ADMINS ONLY!",
+        "operationId" : "deleteProgram",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "programId",
+          "in" : "path",
+          "description" : "Unique program identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of program",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Program with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "Program is already deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/tags" : {
+      "get" : {
+        "tags" : [ "tags" ],
+        "summary" : "Returns list of tags",
+        "description" : "Returns a complete list of tags associated with the session account.",
+        "operationId" : "getTags",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of tag list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "204" : {
+            "description" : "No content"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/tags/media/{tagId}" : {
+      "get" : {
+        "tags" : [ "tags" ],
+        "summary" : "Returns list of media in a tag",
+        "description" : "Returns a complete list of media files in a specific tag based on the submitted tag identifier.",
+        "operationId" : "getMediaTag",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tagId",
+          "in" : "path",
+          "description" : "Unique tag identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of channel details",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid Tag type"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Channel with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "tags" ],
+        "summary" : "Add Media list to a tag",
+        "description" : "Updates an existing tag. ADMINS ONLY! ",
+        "operationId" : "addMediaToTag",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "List of media identifiers to add to the tag",
+          "required" : true,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        }, {
+          "name" : "tagId",
+          "in" : "path",
+          "description" : "Unique tag identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update of tag",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "400" : {
+            "description" : "Invalid tag type"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "410" : {
+            "description" : "Tag is deleted"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "tags" ],
+        "summary" : "Deletes media from tag based on unique identifier",
+        "description" : "Deletes the media in the tag associated with the tagId. ADMINS ONLY!",
+        "operationId" : "deleteMediaFromTag",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "List of media identifiers to add to the folder",
+          "required" : true,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        }, {
+          "name" : "tagId",
+          "in" : "path",
+          "description" : "Unique tag identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of media from tag",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Tag with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/tags/type/{tagType}" : {
+      "get" : {
+        "tags" : [ "tags" ],
+        "summary" : "Returns list of tags based on specified type",
+        "description" : "Returns a complete list of tags associated with the session account and specified tag type.",
+        "operationId" : "getTagsByType",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tagType",
+          "in" : "path",
+          "description" : "CategoryType",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of tag list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "204" : {
+            "description" : "No content"
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/tags/{tagId}" : {
+      "get" : {
+        "tags" : [ "tags" ],
+        "summary" : "Returns tag details",
+        "description" : "Returns a complete list of details for a specific tag based on the submitted tag identifier.",
+        "operationId" : "getTag",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "tagId",
+          "in" : "path",
+          "description" : "Unique tag identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of tag details",
+            "schema" : {
+              "$ref" : "#/definitions/Tag information with media list"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "Tag with given identifier does not exist"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/users" : {
+      "get" : {
+        "tags" : [ "users" ],
+        "summary" : "Returns list of users for the active account",
+        "description" : "Returns a complete list of active users associated with the account linked to the session. ADMINS ONLY!",
+        "operationId" : "getUsers",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of user list",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "403" : {
+            "description" : "User not authorized"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "users" ],
+        "summary" : "Creates a new user",
+        "description" : "Creates a new user based on the information sent in the UserProfile model ",
+        "operationId" : "createUser",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "UserProfile object containing all the user's information to be saved",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/User Profile Information"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful creation of user",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "406" : {
+            "description" : "Data not acceptable - User already exists"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "users" ],
+        "summary" : "Update an existing user",
+        "description" : "Updates an existing user based on the information sent in the UserProfile model ",
+        "operationId" : "updateUser",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "User Profile Model. Requires user ID. Only submit fields that need to be updated. ADMINS and SELF ONLY!",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/User Profile Information"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update of user profile",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "406" : {
+            "description" : "User not found or not active"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/users/me" : {
+      "get" : {
+        "tags" : [ "users" ],
+        "summary" : "Returns user profile associated with session",
+        "description" : "Returns the user profile associated with the current session.",
+        "operationId" : "getUser",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of user profile",
+            "schema" : {
+              "$ref" : "#/definitions/User Profile Information"
+            }
+          },
+          "404" : {
+            "description" : "User not found in session"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "users" ],
+        "summary" : "Update session user",
+        "description" : "Updates the user associated with the current session ",
+        "operationId" : "updateSessionUser",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "User Profile Model. Requires user ID. Only fill fields that need to be updated. Others shouuld be left null. ADMINS and SELF ONLY!",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/User Profile Information"
+          }
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Successful update of user profile",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "406" : {
+            "description" : "User not "
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "users" ],
+        "summary" : "Deletes user based on user session",
+        "description" : "Deletes the user associated with the active session. Record is not deleted but flagged as inactive.",
+        "operationId" : "deleteUser",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of user",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "User with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "User is already disabled"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/users/roles/{userId}" : {
+      "get" : {
+        "tags" : [ "users" ],
+        "summary" : "Returns user roles associated with user identifier",
+        "description" : "Returns the user roles associated with the user identifier. User must belong to the active account in the session. ADMINS ONLY!",
+        "operationId" : "getUserRoles",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of user roles",
+            "schema" : {
+              "$ref" : "#/definitions/List of AuthorizedAccount models"
+            }
+          },
+          "404" : {
+            "description" : "User identifier not found"
+          },
+          "406" : {
+            "description" : "Active Account must be set"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    },
+    "/users/{userId}" : {
+      "get" : {
+        "tags" : [ "users" ],
+        "summary" : "Returns user profile associated with identifier",
+        "description" : "Returns the user profile associated with the user identifier. User must belong to the active account in the session. ADMINS ONLY!",
+        "operationId" : "getUserById",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "description" : "Unique user identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful retrieval of user profile",
+            "schema" : {
+              "$ref" : "#/definitions/User Profile Information"
+            }
+          },
+          "403" : {
+            "description" : "User not authorized"
+          },
+          "404" : {
+            "description" : "User identifier not found"
+          },
+          "406" : {
+            "description" : "Active Account must be set"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "users" ],
+        "summary" : "Deletes user based on user identifier",
+        "description" : "Deletes the user associated with the submitted user identifier. Record is not deleted but flagged as inactive. User must belong to the active account in the session. ADMINS ONLY!",
+        "operationId" : "deleteUser",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "description" : "Unique user identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "session",
+          "in" : "query",
+          "description" : "Unique user sessionKey obtained at login",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful deletion of user",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          },
+          "403" : {
+            "description" : "Not authorized"
+          },
+          "404" : {
+            "description" : "User with given identifier does not exist"
+          },
+          "410" : {
+            "description" : "User is already disabled"
+          },
+          "500" : {
+            "description" : "Internal server error"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Account Detail" : {
+      "type" : "object",
+      "required" : [ "accountId", "accountName", "country", "email", "phone", "timeZone" ],
+      "properties" : {
+        "accountId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Unique Account Identifier"
+        },
+        "accountName" : {
+          "type" : "string",
+          "description" : "Account Name"
+        },
+        "createDate" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Date account created - Autogenerated",
+          "readOnly" : true
+        },
+        "companyName" : {
+          "type" : "string",
+          "description" : "Company Name if applicable"
+        },
+        "address1" : {
+          "type" : "string",
+          "description" : "Company address if applicable"
+        },
+        "address2" : {
+          "type" : "string",
+          "description" : "Company address if applicable"
+        },
+        "city" : {
+          "type" : "string",
+          "description" : "Company address if applicable"
+        },
+        "phone" : {
+          "type" : "string",
+          "description" : "Account phone"
+        },
+        "email" : {
+          "type" : "string",
+          "description" : "Account email address"
+        },
+        "defaultLanguage" : {
+          "description" : "Default language - set to English if not set",
+          "$ref" : "#/definitions/Language"
+        },
+        "state" : {
+          "description" : "Company address if applicable",
+          "$ref" : "#/definitions/State"
+        },
+        "zipCode" : {
+          "description" : "Company address if applicable",
+          "$ref" : "#/definitions/ZipCode"
+        },
+        "country" : {
+          "description" : "Country",
+          "$ref" : "#/definitions/Country"
+        },
+        "timeZone" : {
+          "description" : "Timzeone",
+          "$ref" : "#/definitions/TimeZone"
+        },
+        "pictureUrl" : {
+          "type" : "string",
+          "description" : "Account Logo"
+        },
+        "admins" : {
+          "type" : "array",
+          "description" : "List of account administrators",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/User Profile Information"
+          }
+        },
+        "channels" : {
+          "type" : "array",
+          "description" : "List of channels related to this account",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Channel Information"
+          }
+        }
+      },
+      "description" : "Extended account information"
+    },
+    "Account Header" : {
+      "type" : "object",
+      "required" : [ "accountId", "accountName" ],
+      "properties" : {
+        "accountId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Unique Account Identifier"
+        },
+        "accountName" : {
+          "type" : "string",
+          "description" : "Account name"
+        },
+        "channelHdrs" : {
+          "type" : "array",
+          "description" : "List of channels related to this account",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Channel Header"
+          }
+        }
+      },
+      "description" : "Limited account information"
+    },
+    "Channel Detailed information" : {
+      "type" : "object",
+      "required" : [ "channelHdr" ],
+      "properties" : {
+        "channelHdr" : {
+          "description" : "Channel Header",
+          "$ref" : "#/definitions/Channel Header"
+        },
+        "accessCode" : {
+          "type" : "string",
+          "description" : "Channel Access Code if applicable",
+          "readOnly" : true
+        },
+        "memberCount" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Number of members for this channel",
+          "readOnly" : true
+        },
+        "viewerCount" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Number of viewers for this channel",
+          "readOnly" : true
+        },
+        "rating" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Channel average user rating",
+          "readOnly" : true
+        },
+        "programs" : {
+          "type" : "array",
+          "description" : "List of programs scheduled within the next 3 days",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Program Header information"
+          }
+        },
+        "player" : {
+          "$ref" : "#/definitions/PlayerDetail"
+        },
+        "viewers" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/User Profile Information"
+          }
+        },
+        "admins" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/User Profile Information"
+          }
+        }
+      },
+      "description" : "Extended channel information"
+    },
+    "Channel Header" : {
+      "type" : "object",
+      "required" : [ "channelId", "channelMode", "channelType", "description", "isActive", "logoUrl", "title" ],
+      "properties" : {
+        "channelId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Unique Channel Identifier"
+        },
+        "channelType" : {
+          "description" : "Channel type",
+          "$ref" : "#/definitions/ChannelTypes"
+        },
+        "title" : {
+          "type" : "string",
+          "description" : "Channel title"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "Channel description"
+        },
+        "logoUrl" : {
+          "type" : "string",
+          "description" : "Channel default logo"
+        },
+        "isActive" : {
+          "type" : "boolean",
+          "description" : "Flag to set if the channel is active and viewable",
+          "default" : false
+        },
+        "language" : {
+          "description" : "Channel default language - Set to english if not defined",
+          "$ref" : "#/definitions/Language"
+        },
+        "timeZone" : {
+          "description" : "Channel timezone - set to same as account timezone if not defined",
+          "$ref" : "#/definitions/TimeZone"
+        },
+        "channelMode" : {
+          "type" : "string",
+          "description" : "Channel mode",
+          "enum" : [ "pay_per_view", "registration", "general", "membership" ]
+        },
+        "status" : {
+          "type" : "string",
+          "description" : "Channel status - implementation is pending",
+          "enum" : [ "STATUS1", "STATUS2", "STATUS3" ]
+        }
+      },
+      "description" : "Limited channel information"
+    },
+    "Channel Information" : {
+      "type" : "object",
+      "required" : [ "channelHdr", "player" ],
+      "properties" : {
+        "channelHdr" : {
+          "description" : "Channel Header",
+          "readOnly" : true,
+          "$ref" : "#/definitions/Channel Header"
+        },
+        "player" : {
+          "description" : "Channel Player information",
+          "readOnly" : true,
+          "$ref" : "#/definitions/PlayerDetail"
+        },
+        "memberCount" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Total number of channel members",
+          "readOnly" : true
+        },
+        "viewerCount" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Total number of channel viewers",
+          "readOnly" : true
+        }
+      },
+      "description" : "General channel information"
+    },
+    "ChannelTypes" : {
+      "type" : "object",
+      "properties" : {
+        "channelTypeId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "channelType" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Country" : {
+      "type" : "object",
+      "properties" : {
+        "countryId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "countryCode" : {
+          "type" : "string"
+        },
+        "countryName" : {
+          "type" : "string"
+        }
+      }
+    },
+    "DateRange" : {
+      "type" : "object",
+      "properties" : {
+        "startDate" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "endDate" : {
+          "type" : "string",
+          "format" : "date-time"
+        }
+      }
+    },
+    "Folder information" : {
+      "type" : "object",
+      "required" : [ "folderType", "name" ],
+      "properties" : {
+        "accountId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Folder Account owner Unique Identifier"
+        },
+        "folderId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Folder Unique Identifier"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Folder Name"
+        },
+        "parentFolder" : {
+          "description" : "Parent folder",
+          "$ref" : "#/definitions/Folder information"
+        },
+        "folderType" : {
+          "type" : "string",
+          "description" : "Folder Type",
+          "enum" : [ "media", "product", "user" ]
+        }
+      },
+      "description" : "Information related to a media folder"
+    },
+    "Folder information with media list" : {
+      "type" : "object",
+      "properties" : {
+        "folderInfo" : {
+          "description" : "Folder Information",
+          "$ref" : "#/definitions/Folder information"
+        },
+        "mediaList" : {
+          "type" : "array",
+          "description" : "List of Media",
+          "items" : {
+            "$ref" : "#/definitions/Media File information"
+          }
+        }
+      },
+      "description" : "Information related to a media folder including the list of media"
+    },
+    "Language" : {
+      "type" : "object",
+      "properties" : {
+        "languageId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "language" : {
+          "type" : "string"
+        }
+      }
+    },
+    "List of AuthorizedAccount models" : {
+      "type" : "object",
+      "required" : [ "authorizedAccounts" ],
+      "properties" : {
+        "authorizedAccounts" : {
+          "type" : "array",
+          "description" : "List of AuthorizedAccounts",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/User account Permissions"
+          }
+        }
+      },
+      "description" : "List of User account Permissions for a given account and user"
+    },
+    "Login response" : {
+      "type" : "object",
+      "required" : [ "authorizedAccounts", "userSession" ],
+      "properties" : {
+        "userSession" : {
+          "description" : "User Session",
+          "readOnly" : true,
+          "$ref" : "#/definitions/User session Information"
+        },
+        "authorizedAccounts" : {
+          "type" : "array",
+          "description" : "List of accounts the user is authorized to access and the specific roles",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/User account Permissions"
+          }
+        }
+      },
+      "description" : "Response sent back during a successful login"
+    },
+    "Media File information" : {
+      "type" : "object",
+      "properties" : {
+        "accountId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Media File Account owner Unique Identifier"
+        },
+        "mediaId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Media File Unique Identifier"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Media File Name"
+        },
+        "caption" : {
+          "type" : "string",
+          "description" : "Media File description"
+        },
+        "mediaUrl" : {
+          "type" : "string",
+          "description" : "Media File Url"
+        },
+        "language" : {
+          "description" : "Media File Language",
+          "$ref" : "#/definitions/Language"
+        },
+        "mediaType" : {
+          "type" : "string",
+          "description" : "Media Type",
+          "readOnly" : true,
+          "enum" : [ "VIDEO", "AUDIO", "AD", "IMAGE" ]
+        },
+        "folders" : {
+          "type" : "array",
+          "description" : "List of folders the media belongs to",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Folder information"
+          }
+        },
+        "tags" : {
+          "type" : "array",
+          "description" : "List of tags for this media",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Tag information"
+          }
+        },
+        "duration" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Length of Media file in seconds",
+          "readOnly" : true
+        },
+        "fileSize" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Size of Media file in bytes",
+          "readOnly" : true
+        }
+      },
+      "description" : "Information related to a media file"
+    },
+    "PlayerDetail" : {
+      "type" : "object",
+      "properties" : {
+        "playerUrl" : {
+          "type" : "string"
+        },
+        "autoPlay" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "autoMute" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "enableBuy" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "enableDonation" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "enableChat" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "enableDownload" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "enablePoll" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "enableHyperlink" : {
+          "type" : "boolean",
+          "default" : false
+        }
+      }
+    },
+    "Playlist Media File information" : {
+      "type" : "object",
+      "required" : [ "listOrder", "mediaFile" ],
+      "properties" : {
+        "listOrder" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Order of media in playlist",
+          "readOnly" : true
+        },
+        "mediaFile" : {
+          "description" : "Media File Object",
+          "$ref" : "#/definitions/Media File information"
+        }
+      },
+      "description" : "Information related to a media file within a playlist"
+    },
+    "Playlist information" : {
+      "type" : "object",
+      "required" : [ "name" ],
+      "properties" : {
+        "accountId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Playlist Account owner Unique Identifier"
+        },
+        "playlistId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Playlist Unique Identifier"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Playlist Name"
+        },
+        "totalItems" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Number of items in playlist",
+          "readOnly" : true
+        }
+      },
+      "description" : "Information related to a media playlist"
+    },
+    "Playlist information with media list" : {
+      "type" : "object",
+      "properties" : {
+        "playlistInfo" : {
+          "description" : "Playlist Information",
+          "$ref" : "#/definitions/Playlist information"
+        },
+        "mediaList" : {
+          "type" : "array",
+          "description" : "List of Media files and order number",
+          "items" : {
+            "$ref" : "#/definitions/Playlist Media File information"
+          }
+        }
+      },
+      "description" : "Information related to a media playlist including the list of media"
+    },
+    "Program Header information" : {
+      "type" : "object",
+      "required" : [ "channelId", "description", "programId", "startTime", "title" ],
+      "properties" : {
+        "programId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Program Unique Identifier"
+        },
+        "title" : {
+          "type" : "string",
+          "description" : "Program short title"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "Program longer description"
+        },
+        "startTime" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Program start time"
+        },
+        "endTime" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Program end time - runs through video if null"
+        },
+        "channelId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Channel the program belongs to"
+        }
+      },
+      "description" : "Limited program information associated with a channel"
+    },
+    "Program information" : {
+      "type" : "object",
+      "required" : [ "channelHdr", "programHdr", "programMode", "videoFileId" ],
+      "properties" : {
+        "programHdr" : {
+          "description" : "Program Header",
+          "readOnly" : true,
+          "$ref" : "#/definitions/Program Header information"
+        },
+        "channelHdr" : {
+          "description" : "Channel Header information",
+          "readOnly" : true,
+          "$ref" : "#/definitions/Channel Header"
+        },
+        "videoFileId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Video id to be played in program",
+          "readOnly" : true
+        },
+        "nextPlay" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "The next time this same program will play",
+          "readOnly" : true
+        },
+        "programMode" : {
+          "type" : "string",
+          "description" : "Program mode",
+          "readOnly" : true,
+          "enum" : [ "pay_per_view", "registration", "general", "membership" ]
+        },
+        "isAuthorized" : {
+          "type" : "boolean",
+          "description" : "For future use",
+          "readOnly" : true,
+          "default" : false
+        },
+        "ppvPlan" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Pay-per-view plan id if program mode is set to PPV",
+          "readOnly" : true
+        }
+      },
+      "description" : "Information about a program associated with a channel"
+    },
+    "Program list" : {
+      "type" : "object",
+      "required" : [ "channelHdr", "endDate", "startDate" ],
+      "properties" : {
+        "startDate" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "returns programs after this date",
+          "readOnly" : true
+        },
+        "endDate" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "returns programs before this date",
+          "readOnly" : true
+        },
+        "channelHdr" : {
+          "description" : "Channel Header",
+          "readOnly" : true,
+          "$ref" : "#/definitions/Channel Header"
+        },
+        "programList" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Program Header information"
+          }
+        }
+      },
+      "description" : "List of programs associated with a channel for a given period"
+    },
+    "Response" : {
+      "type" : "object",
+      "properties" : {
+        "entity" : {
+          "type" : "object"
+        },
+        "status" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "metadata" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "array",
+            "items" : {
+              "type" : "object"
+            }
+          }
+        }
+      }
+    },
+    "Role" : {
+      "type" : "object",
+      "properties" : {
+        "role" : {
+          "type" : "string",
+          "enum" : [ "ADMIN_GLOBAL", "ADMIN_ACCOUNT", "ADMIN_CHANNEL", "MODERATOR", "VIEWER" ]
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "channel" : {
+          "$ref" : "#/definitions/Channel Header"
+        },
+        "account" : {
+          "$ref" : "#/definitions/Account Header"
+        }
+      }
+    },
+    "Roles" : {
+      "type" : "object",
+      "properties" : {
+        "userRoles" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Role"
+          }
+        }
+      }
+    },
+    "State" : {
+      "type" : "object",
+      "properties" : {
+        "stateId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "state" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Tag information" : {
+      "type" : "object",
+      "properties" : {
+        "tagId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Tag Unique Identifier"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Tag Name"
+        }
+      },
+      "description" : "Information related to a media tag"
+    },
+    "Tag information with media list" : {
+      "type" : "object",
+      "properties" : {
+        "tagInfo" : {
+          "description" : "Tag Information",
+          "$ref" : "#/definitions/Tag information"
+        },
+        "mediaList" : {
+          "type" : "array",
+          "description" : "List of Media",
+          "items" : {
+            "$ref" : "#/definitions/Media File information"
+          }
+        }
+      },
+      "description" : "Information related to a media tag including the list of media"
+    },
+    "Tag list" : {
+      "type" : "object",
+      "required" : [ "categories" ],
+      "properties" : {
+        "categories" : {
+          "type" : "array",
+          "description" : "List of categories (Field/Value pair)",
+          "readOnly" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "accountId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Account Identifier"
+        },
+        "folderId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Folder Identifier"
+        },
+        "mediaType" : {
+          "type" : "string",
+          "enum" : [ "VIDEO", "AUDIO", "AD", "IMAGE" ]
+        }
+      },
+      "description" : "List of categories"
+    },
+    "TimeZone" : {
+      "type" : "object",
+      "properties" : {
+        "timeZoneId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "utcOffset" : {
+          "type" : "string"
+        },
+        "timeZone" : {
+          "type" : "string"
+        }
+      }
+    },
+    "User Profile Information" : {
+      "type" : "object",
+      "required" : [ "country", "email", "firstName", "lastName", "timeZone", "userId" ],
+      "properties" : {
+        "userId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Unique user identifier",
+          "readOnly" : true
+        },
+        "firstName" : {
+          "type" : "string",
+          "description" : "First Name"
+        },
+        "lastName" : {
+          "type" : "string",
+          "description" : "Last name"
+        },
+        "picture" : {
+          "type" : "string",
+          "description" : "User's picture"
+        },
+        "email" : {
+          "type" : "string",
+          "description" : "User's email address"
+        },
+        "phone" : {
+          "type" : "string",
+          "description" : "Phone number"
+        },
+        "mobile" : {
+          "type" : "string",
+          "description" : "Mobile number"
+        },
+        "language" : {
+          "description" : "Default language - set to english if not defined",
+          "$ref" : "#/definitions/Language"
+        },
+        "country" : {
+          "description" : "Country",
+          "$ref" : "#/definitions/Country"
+        },
+        "timeZone" : {
+          "description" : "Timezone",
+          "$ref" : "#/definitions/TimeZone"
+        },
+        "roles" : {
+          "type" : "array",
+          "description" : "List of roles for this user",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Role"
+          }
+        },
+        "isGlobalAdmin" : {
+          "type" : "boolean",
+          "description" : "Flag to set if user is a global administrator",
+          "readOnly" : true,
+          "default" : false
+        }
+      },
+      "description" : "General information pertaining to a user"
+    },
+    "User account Permissions" : {
+      "type" : "object",
+      "required" : [ "accountId", "accountName", "accountRoles", "channels", "isAdmin" ],
+      "properties" : {
+        "accountId" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Account Unique Identifier",
+          "readOnly" : true
+        },
+        "accountName" : {
+          "type" : "string",
+          "description" : "Account name",
+          "readOnly" : true
+        },
+        "accountRoles" : {
+          "type" : "array",
+          "description" : "List of valid roles for this account based on user identifier",
+          "readOnly" : true,
+          "items" : {
+            "type" : "string",
+            "enum" : [ "ADMIN_GLOBAL", "ADMIN_ACCOUNT", "ADMIN_CHANNEL", "MODERATOR", "VIEWER" ]
+          }
+        },
+        "channels" : {
+          "type" : "array",
+          "description" : "List of channels the user can administer for this account",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Channel Header"
+          }
+        },
+        "isAdmin" : {
+          "type" : "boolean",
+          "description" : "Flag to set if user is an administrator for this account",
+          "readOnly" : true,
+          "default" : false
+        }
+      },
+      "description" : "User account Permissions for a given account and user"
+    },
+    "User authorization credentials" : {
+      "type" : "object",
+      "required" : [ "password", "username" ],
+      "properties" : {
+        "username" : {
+          "type" : "string",
+          "description" : "User's Username"
+        },
+        "password" : {
+          "type" : "string",
+          "description" : "User's Password"
+        }
+      },
+      "description" : "Credentials needed for user to log in"
+    },
+    "User session Information" : {
+      "type" : "object",
+      "required" : [ "sessionKey" ],
+      "properties" : {
+        "sessionKey" : {
+          "type" : "string",
+          "description" : "Unique session key",
+          "readOnly" : true
+        },
+        "expiration" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Session Key Expirate date/time"
+        },
+        "activeAccount" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Account currently activated by user"
+        },
+        "activeChannel" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Channel currently activated by user"
+        },
+        "userProfile" : {
+          "description" : "User profile information",
+          "$ref" : "#/definitions/User Profile Information"
+        }
+      },
+      "description" : "User's active session information"
+    },
+    "ZipCode" : {
+      "type" : "object",
+      "properties" : {
+        "zipCodeId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "zipCode" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
