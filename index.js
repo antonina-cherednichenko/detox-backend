@@ -33,10 +33,19 @@ app.use(express.static('public'));
 
 // Generate a simple home page.
 app.get('/', function (req, res) {
-    res.send("Hey there! Thanks for visting the site! This is backend of Detox and Diets mobile app");
+    res.send("Hey there! Thanks for visting the site! This is backend of Detox and Diets and Daily Fitness mobile apps");
 });
 
-// Retrieving content for mobile app
+// Retrieving content for Fitness Daily mobile app
+app.get('/data_fd', function(req, res) {
+  res.json(JSON.parse(fs.readFileSync('content/fitness_programs_data.json', 'utf-8')));
+});
+
+app.get('/version_fd', function(req, res) {
+   res.send("1");
+});
+
+// Retrieving content for Detox & Diets mobile app
 app.get('/data', function(req, res) {
   res.json(JSON.parse(fs.readFileSync('content/programs_data.json', 'utf-8')));
 });
