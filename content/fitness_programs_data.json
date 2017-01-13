@@ -23,15 +23,59 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/2/2.jpg"
     },
     {
-      "name": "",
+      "name": "Arm & Shoulder Bikini Body Workout",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/3/1.png",
-      "description": "",
+      "description": "Get your upper body ready for bikini weather with this arm and shoulder workout. Tone and sculpt your triceps, biceps and shoulders.",
       "new": 0,
       "recommended": 0,
-      "shortDescription": "",
+      "shortDescription": "Get your upper body ready for bikini weather with this arm and shoulder workout. Tone and sculpt your triceps, biceps and shoulders.",
       "sourceName": "spotebi.com",
       "sourceUrl": "http://www.spotebi.com/workout-routines/arm-and-shoulder-workout-bikini-body/",
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/3/2.jpg"
+    },
+    {
+      "name": "Flat Stomach Workout",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/4/1.png",
+      "description": "Want to easily whip your tummy into shape? Try this at home flat stomach workout for women, to sculpt your abs in no time.",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "Want to easily whip your tummy into shape? Try this at home flat stomach workout for women, to sculpt your abs in no time.",
+      "sourceName": "spotebi",
+      "sourceUrl": "https://www.pinterest.com/spotebi/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/4/2.jpg"
+    },
+     {
+      "name": "Full Body Workout",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/5/1.png",
+      "description": "Burn extra calories with this 30-minute full body fat burning workout routine. A set of 10 compound movements to strengthen your heart and body.",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "Burn extra calories with this 30-minute full body fat burning workout routine. A set of 10 compound movements to strengthen your heart and body.",
+      "sourceName": "spotebi",
+      "sourceUrl": "https://www.pinterest.com/spotebi/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/5/2.jpg"
+    },
+     {
+      "name": "Core Exercises For Women",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/6/1.png",
+      "description": "Work your abs and obliques with these core exercises for women. A 30-minute waist cinching workout that will activate your obliques.",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "Work your abs and obliques with these core exercises for women. A 30-minute waist cinching workout that will activate your obliques.",
+      "sourceName": "spotebi",
+      "sourceUrl": "https://www.pinterest.com/spotebi/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/6/2.jpg"
+    },
+    {
+      "name": "Skinny Legs Workout",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/6/1.png",
+      "description": "Get slim, shapely legs and thighs with this 29 minute skinny legs workout. An at home summer routine to tone your lower body.",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "Get slim, shapely legs and thighs with this 29 minute skinny legs workout. An at home summer routine to tone your lower body.",
+      "sourceName": "spotebi",
+      "sourceUrl": "https://www.pinterest.com/spotebi/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/6/2.jpg"
     }
   ]
 }
