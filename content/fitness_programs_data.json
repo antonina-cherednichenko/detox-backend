@@ -14,13 +14,24 @@
      {
       "name": "Bodyweight Tabata Workout",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/2/1.png",
-      "description": "This workout is made up of three tabata supersets. For each tabata superset, set an interval timer for 8 rounds of 20 seconds of work and 10 seconds of rest. During the work intervals, you’ll alternate between the two exercises. In other words: 20 seconds Exercise 1 / 10 seconds rest / 20 seconds Exercise 2 / 10 seconds rest and so on. Rest as needed between tabata supersets, but try to limit it to 60 seconds if possible.",
+      "description": "This workout is made up of three tabata supersets. Enjoy the results!",
       "new": 0,
       "recommended": 0,
-      "shortDescription": "This workout is made up of three tabata supersets. For each tabata superset, set an interval timer for 8 rounds of 20 seconds of work and 10 seconds of rest. During the work intervals, you’ll alternate between the two exercises. In other words: 20 seconds Exercise 1 / 10 seconds rest / 20 seconds Exercise 2 / 10 seconds rest and so on. Rest as needed between tabata supersets, but try to limit it to 60 seconds if possible.",
-      "sourceName": "pumpsandiron.com/",
+      "shortDescription": "This workout is made up of three tabata supersets. Enjoy the results!",
+      "sourceName": "pumpsandiron.com",
       "sourceUrl": "http://pumpsandiron.com/2016/06/14/12-minute-bodyweight-tabata-workout-series-lower-body-legs-glutes/",
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/2/2.jpg"
+    },
+    {
+      "name": "",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/3/1.png",
+      "description": "",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "",
+      "sourceName": "spotebi.com",
+      "sourceUrl": "http://www.spotebi.com/workout-routines/arm-and-shoulder-workout-bikini-body/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/3/2.jpg"
     }
   ]
 }
