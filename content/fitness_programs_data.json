@@ -252,6 +252,61 @@
       "sourceName": "spotebi",
       "sourceUrl": "https://www.pinterest.com/spotebi/",
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/23/2.jpg"
+    },
+     {
+      "name": "10 Butt Exercises to a Beach Ready Tush",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/24/1.png",
+      "description": "Hit muscles you never knew you had and build a firm, perky tush with these 10 butt exercises for women. Repeat this series three times to lift, tone and tighten your backside just in time for summer!",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "Hit muscles you never knew you had and build a firm, perky tush with these 10 butt exercises for women. Repeat this series three times to lift, tone and tighten your backside just in time for summer!",
+      "sourceName": "spotebi",
+      "sourceUrl": "https://www.pinterest.com/spotebi/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/24/2.jpg"
+    },
+    {
+      "name": "At Home Waist Slimming Exercises",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/25/1.png",
+      "description": "The secret to a slim waist lies in a combination of exercises that work your abs, obliques and the transverse abdominals. These 10 waist slimming moves are perfect for toning and defining your waist and abs, and banish those love handles for good!",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "The secret to a slim waist lies in a combination of exercises that work your abs, obliques and the transverse abdominals. These 10 waist slimming moves are perfect for toning and defining your waist and abs, and banish those love handles for good!",
+      "sourceName": "spotebi",
+      "sourceUrl": "https://www.pinterest.com/spotebi/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/25/2.jpg"
+    },
+    {
+      "name": "Chest Workout",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/26/1.png",
+      "description": "Try these 10 chest exercises for women to give your bust line a lift and make your breasts appear bigger and perkier, the natural way!",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "Try these 10 chest exercises for women to give your bust line a lift and make your breasts appear bigger and perkier, the natural way!",
+      "sourceName": "spotebi",
+      "sourceUrl": "https://www.pinterest.com/spotebi/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/26/2.jpg"
+    },
+    {
+      "name": "Sculpted & Feminine Calves Workout",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/27/1.png",
+      "description": "The best exercises for sculpted, strong and feminine legs! Strong and sculpted legs not only look fabulous in a short dress but can also help you boost your athletic performance and provide your body with a solid foundation to build upon.",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "The best exercises for sculpted, strong and feminine legs! Strong and sculpted legs not only look fabulous in a short dress but can also help you boost your athletic performance and provide your body with a solid foundation to build upon.",
+      "sourceName": "spotebi",
+      "sourceUrl": "https://www.pinterest.com/spotebi/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/27/2.jpg"
+    },
+    {
+      "name": "Booty Pop Workout",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/28/1.png",
+      "description": "Work your booty from all angles and make it pop with these 10 butt exercises for women. An intense 30 minute workout that will bring your muscles to full fatigue while keeping your heart rate up!",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "Work your booty from all angles and make it pop with these 10 butt exercises for women. An intense 30 minute workout that will bring your muscles to full fatigue while keeping your heart rate up!",
+      "sourceName": "spotebi",
+      "sourceUrl": "https://www.pinterest.com/spotebi/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/28/2.jpg"
     }
   ]
 }
