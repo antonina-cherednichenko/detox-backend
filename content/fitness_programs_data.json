@@ -68,14 +68,27 @@
     },
     {
       "name": "Skinny Legs Workout",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/6/1.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/7/1.png",
       "description": "Get slim, shapely legs and thighs with this 29 minute skinny legs workout. An at home summer routine to tone your lower body.",
       "new": 0,
       "recommended": 0,
       "shortDescription": "Get slim, shapely legs and thighs with this 29 minute skinny legs workout. An at home summer routine to tone your lower body.",
       "sourceName": "spotebi",
       "sourceUrl": "https://www.pinterest.com/spotebi/",
-      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/6/2.jpg"
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/7/2.jpg"
+    },
+    {
+      "name": "Lower Body Workout",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/8/1.png",
+      "description": "Start your lower body workout for beginners with a complete warm up routine, which includes exercises that move your body through all planes.",
+      "new": 0,
+      "recommended": 0,
+      "shortDescription": "Start your lower body workout for beginners with a complete warm up routine, which includes exercises that move your body through all planes.",
+      "sourceName": "spotebi",
+      "sourceUrl": "https://www.pinterest.com/spotebi/",
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/8/2.jpg"
+    },
+    {
     }
   ]
 }
