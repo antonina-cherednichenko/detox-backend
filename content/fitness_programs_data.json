@@ -23,7 +23,7 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/2/2.jpg"
     },
     {
-      "name": "Arm & Shoulder Bikini Body Workout",
+      "name": "Arm & Shoulder Workout",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/3/1.png",
       "description": "Get your upper body ready for bikini weather with this arm and shoulder workout. Tone and sculpt your triceps, biceps and shoulders.",
       "new": 1,
@@ -31,7 +31,7 @@
       "shortDescription": "Get your upper body ready for bikini weather with this arm and shoulder workout. Tone and sculpt your triceps, biceps and shoulders.",
       "sourceName": "spotebi.com",
       "sourceUrl": "http://www.spotebi.com/workout-routines/arm-and-shoulder-workout-bikini-body/",
-      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/3/2.jpg"
+      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/3/2.png"
     },
     {
       "name": "Flat Stomach Workout",
@@ -111,12 +111,12 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/10/2.jpg"
     },
     {
-      "name": "Bikini Body Tight Tummy Workout",
+      "name": "Summer Bodyweight Routine",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/11/1.png",
-      "description": "Get a flat, toned stomach and snap into shape with this bikini body tight tummy workout. 10 core-strengthening moves to help you sculpt sexy body.",
+      "description": "Get ready for the beach with these 10 calorie blasting moves! A summer body workout with butt lifting, core strengthening, and arm sculpting exercises. Boost your metabolism and get your body in shape for bikini season! ",
       "new": 1,
       "recommended": 0,
-      "shortDescription": "Get a flat, toned stomach and snap into shape with this bikini body tight tummy workout. 10 core-strengthening moves to help you sculpt sexy body.",
+      "shortDescription": "Get ready for the beach with these 10 calorie blasting moves! A summer body workout with butt lifting, core strengthening, and arm sculpting exercises. Boost your metabolism and get your body in shape for bikini season! ",
       "sourceName": "spotebi",
       "sourceUrl": "https://www.pinterest.com/spotebi/",
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/11/2.jpg"
@@ -155,7 +155,7 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/14/2.jpg"
     },
     {
-      "name": "4 Exercises for Lean, Toned Legs",
+      "name": "Exercises for Toned Legs",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/15/1.png",
       "description": "From troublesome thighs to stick-like calves, the legs are a problem area for many of us. Here are 4 leg toning exercises for lovely legs.",
       "new": 1,
@@ -166,12 +166,12 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/15/2.jpg"
     },
     {
-      "name": "Firm And Lift Your Breasts",
+      "name": "Cardio Upper Body Warm Up",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/16/1.png",
-      "description": "Firm your breasts and give your bust line a lift with this killer chest workout for women. 10 at-home moves to strengthen your pec muscles and help you enhance your cleavage, just in time for summer!",
+      "description": "Prepare your back, chest, arms and shoulders for strength training with this 10 minute upper body warm up routine. Start the timer and enjoy your workout!",
       "new": 1,
       "recommended": 0,
-      "shortDescription": "Firm your breasts and give your bust line a lift with this killer chest workout for women. 10 at-home moves to strengthen your pec muscles and help you enhance your cleavage, just in time for summer!",
+      "shortDescription": "Prepare your back, chest, arms and shoulders for strength training with this 10 minute upper body warm up routine. Start the timer and enjoy your workout!",
       "sourceName": "spotebi",
       "sourceUrl": "https://www.pinterest.com/spotebi/",
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/16/2.jpg"
@@ -188,7 +188,7 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/17/2.jpg"
     },
     {
-      "name": "Love Handlers & Maffintop Melter Workout",
+      "name": "Maffin Top Melter Workout",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/18/1.png",
       "description": "Try out these simple exercises to get rid of love hadlers, enjoy the results!",
       "new": 1,
@@ -199,7 +199,7 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/18/2.jpg"
     },
     {
-      "name": "Legs & Thighs Bikini Body Workout",
+      "name": "Legs & Thighs Workout",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/19/1.png",
       "description": "Work your hips, quads, hamstrings and calves with these 10 leg and thigh exercises for women. This lower body workout is designed to strengthen your muscles, tone your thighs and sculpt your legs!",
       "new": 1,
@@ -210,12 +210,12 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/19/2.jpg"
     },
     {
-      "name": "Upper Body Bodyweight Exercises",
+      "name": "Full Body Dumbbell Complex",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/20/1.png",
-      "description": "Sculpt your back, chest, shoulders, and arms and boost your weight loss with these 10 upper body bodyweight exercises for women.",
+      "description": "Maximize weight loss and jump start your metabolism with this full body intermediate dumbbell complex.",
       "new": 1,
       "recommended": 0,
-      "shortDescription": "Sculpt your back, chest, shoulders, and arms and boost your weight loss with these 10 upper body bodyweight exercises for women.",
+      "shortDescription": "Maximize weight loss and jump start your metabolism with this full body intermediate dumbbell complex.",
       "sourceName": "spotebi",
       "sourceUrl": "https://www.pinterest.com/spotebi/",
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/20/2.jpg"
@@ -254,18 +254,18 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/23/2.jpg"
     },
     {
-      "name": "10 Butt Exercises to a Beach Ready Tush",
+      "name": "Whole Body Workout",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/24/1.png",
-      "description": "Hit muscles you never knew you had and build a firm, perky tush with these 10 butt exercises for women. Repeat this series three times to lift, tone and tighten your backside just in time for summer!",
+      "description": "Stay lean and fit this holiday season with this whole body fat burning circuit. A complete full body workout routine that's sure to keep those holiday pounds at bay!",
       "new": 1,
       "recommended": 0,
-      "shortDescription": "Hit muscles you never knew you had and build a firm, perky tush with these 10 butt exercises for women. Repeat this series three times to lift, tone and tighten your backside just in time for summer!",
+      "shortDescription": "Stay lean and fit this holiday season with this whole body fat burning circuit. A complete full body workout routine that's sure to keep those holiday pounds at bay!",
       "sourceName": "spotebi",
       "sourceUrl": "https://www.pinterest.com/spotebi/",
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/24/2.jpg"
     },
     {
-      "name": "At Home Waist Slimming Exercises",
+      "name": "Waist Slimming Exercises",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/25/1.png",
       "description": "The secret to a slim waist lies in a combination of exercises that work your abs, obliques and the transverse abdominals. These 10 waist slimming moves are perfect for toning and defining your waist and abs, and banish those love handles for good!",
       "new": 1,
@@ -332,7 +332,7 @@
     },
     {
       "name": "Healthy Weight Workout",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/31/1.png",
+      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/31/1.jpeg",
       "description": "The desire to lose weight is shared by millions of people who are struggling with being overweight or with obesity. If you have been having trouble getting started, you may just need some quick weight loss tips to get underway.",
       "new": 1,
       "recommended": 0,
