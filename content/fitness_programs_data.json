@@ -122,7 +122,7 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/11/2.jpg"
     },
     {
-      "name": "Upper Body Intermediate Workout",
+      "name": "Upper Body Workout",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/12/1.png",
       "description": "Improve your posture and increase your strength at home with this upper body intermediate workout. A back and chest routine for women you will like.",
       "new": 1,
@@ -155,7 +155,7 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/14/2.jpg"
     },
     {
-      "name": "Exercises for Toned Legs",
+      "name": "Exercises For Toned Legs",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/15/1.png",
       "description": "From troublesome thighs to stick-like calves, the legs are a problem area for many of us. Here are 4 leg toning exercises for lovely legs.",
       "new": 1,
