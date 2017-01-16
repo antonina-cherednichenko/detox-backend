@@ -199,17 +199,6 @@
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/18/2.jpg"
     },
     {
-      "name": "Legs & Thighs Workout",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/19/1.png",
-      "description": "Work your hips, quads, hamstrings and calves with these 10 leg and thigh exercises for women. This lower body workout is designed to strengthen your muscles, tone your thighs and sculpt your legs!",
-      "new": 1,
-      "recommended": 0,
-      "shortDescription": "Work your hips, quads, hamstrings and calves with these 10 leg and thigh exercises for women. This lower body workout is designed to strengthen your muscles, tone your thighs and sculpt your legs!",
-      "sourceName": "spotebi",
-      "sourceUrl": "https://www.pinterest.com/spotebi/",
-      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/19/2.jpg"
-    },
-    {
       "name": "Full Body Dumbbell Complex",
       "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/20/1.png",
       "description": "Maximize weight loss and jump start your metabolism with this full body intermediate dumbbell complex.",
@@ -263,17 +252,6 @@
       "sourceName": "spotebi",
       "sourceUrl": "https://www.pinterest.com/spotebi/",
       "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/24/2.jpg"
-    },
-    {
-      "name": "Waist Slimming Exercises",
-      "photoURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/25/1.png",
-      "description": "The secret to a slim waist lies in a combination of exercises that work your abs, obliques and the transverse abdominals. These 10 waist slimming moves are perfect for toning and defining your waist and abs, and banish those love handles for good!",
-      "new": 1,
-      "recommended": 0,
-      "shortDescription": "The secret to a slim waist lies in a combination of exercises that work your abs, obliques and the transverse abdominals. These 10 waist slimming moves are perfect for toning and defining your waist and abs, and banish those love handles for good!",
-      "sourceName": "spotebi",
-      "sourceUrl": "https://www.pinterest.com/spotebi/",
-      "photoInstructionsURL": "https://mighty-bayou-30907.herokuapp.com/fitness_images/25/2.jpg"
     },
     {
       "name": "Chest Workout",
